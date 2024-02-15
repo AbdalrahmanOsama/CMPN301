@@ -1,0 +1,432 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ten/Desktop/Mostafa Hassanien Ahmed_1180581
+Ecomp
+Z1 w1652009081
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 dD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581
+Z8 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/comp.vhd
+Z9 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/comp.vhd
+l0
+L5
+V`?bQgId7L^fI6cRl?jjC;1
+!s100 NARR8n_W>aMaIPi@JTVWo0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1652352395
+!i10b 1
+Z12 !s108 1652352395.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/comp.vhd|
+Z14 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/comp.vhd|
+!i113 1
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1 CvgOpt 0
+Aarch2
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 comp 0 22 `?bQgId7L^fI6cRl?jjC;1
+l13
+L11
+VX^K9SOoNW0<GaJ_S4PzF51
+!s100 VoIa^OW]QnB44=:iWcI160
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ecounter
+Z17 w1652008887
+R2
+R3
+R4
+R5
+R6
+R7
+Z18 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/counter.vhd
+Z19 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/counter.vhd
+l0
+L5
+V0jjmef6cFiXPIzlKeo_hQ1
+!s100 fZL9=;;:T>^:5Y^^zHOaZ1
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/counter.vhd|
+Z21 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/counter.vhd|
+!i113 1
+R15
+R16
+Aarch1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 counter 0 22 0jjmef6cFiXPIzlKeo_hQ1
+l13
+L12
+VXT_9DdVXT>GTzmj_`7I:e0
+!s100 hP8[I?^FdEOgUj66zEUgG3
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
+Ectr
+Z22 w1652008859
+R2
+R3
+R4
+R5
+R6
+R7
+Z23 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/ctr.vhd
+Z24 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/ctr.vhd
+l0
+L5
+VLcAbi<<lQeJa3b2K^l^_b0
+!s100 o17Z8_KzohHmm6Zi7J;3Y0
+R10
+32
+R11
+!i10b 1
+R12
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/ctr.vhd|
+Z26 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/ctr.vhd|
+!i113 1
+R15
+R16
+Aarch1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 ctr 0 22 LcAbi<<lQeJa3b2K^l^_b0
+l14
+L13
+VA;XE<E_XI4_102j7G>24O1
+!s100 IZI:FHT_[eLk;QMiQlK6Q0
+R10
+32
+R11
+!i10b 1
+R12
+R25
+R26
+!i113 1
+R15
+R16
+Emux2
+Z27 w1652005310
+R5
+R6
+R7
+Z28 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2.vhd
+Z29 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2.vhd
+l0
+L3
+VBKMSNnDJGOHlQ3EB4Nn;_1
+!s100 ze7dIF9zP=la:h<d[=0>a3
+R10
+32
+R11
+!i10b 1
+R12
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2.vhd|
+Z31 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2.vhd|
+!i113 1
+R15
+R16
+Aarch1
+R5
+R6
+DEx4 work 4 mux2 0 22 BKMSNnDJGOHlQ3EB4Nn;_1
+l12
+L11
+Vj<cV?;o0S:hEbF47U3HG]2
+!s100 ZGJMWbB4HCj1GhOZfB1M02
+R10
+32
+R11
+!i10b 1
+R12
+R30
+R31
+!i113 1
+R15
+R16
+Emux2x1
+Z32 w1652005243
+R5
+R6
+R7
+Z33 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2X1.vhd
+Z34 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2X1.vhd
+l0
+L3
+V6E1IS7=dgUWN_[:C9f5OV3
+!s100 HJ8MV]HlXRak2JGfBhT:o1
+R10
+32
+R11
+!i10b 1
+R12
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2X1.vhd|
+Z36 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/mux2X1.vhd|
+!i113 1
+R15
+R16
+Aarch1
+R5
+R6
+DEx4 work 6 mux2x1 0 22 6E1IS7=dgUWN_[:C9f5OV3
+l12
+L11
+ViSQT18Yl[;CPRYDKAW1031
+!s100 H4U4aaVKIX15n8IWe`M@F0
+R10
+32
+R11
+!i10b 1
+R12
+R35
+R36
+!i113 1
+R15
+R16
+Emy_adder
+Z37 w1650946096
+R5
+R6
+R7
+Z38 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/my_adder.vhd
+Z39 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/my_adder.vhd
+l0
+L4
+VFjlMaf=9aFlNWPMnMXH?k3
+!s100 A5lJZfMh@V_I]hj`4ZSML1
+R10
+32
+R11
+!i10b 1
+R12
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/my_adder.vhd|
+Z41 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/my_adder.vhd|
+!i113 1
+R15
+R16
+Aa_my_adder
+R5
+R6
+DEx4 work 8 my_adder 0 22 FjlMaf=9aFlNWPMnMXH?k3
+l10
+L9
+VJ]_kQ1mojAbKaQ[_V=7@93
+!s100 _I7FWmdAa8bn:A:[eaVaC3
+R10
+32
+R11
+!i10b 1
+R12
+R40
+R41
+!i113 1
+R15
+R16
+Emy_nadder
+Z42 w1650946098
+R5
+R6
+R7
+Z43 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/n_bit_adder.vhd
+Z44 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/n_bit_adder.vhd
+l0
+L3
+V1aXOU3kVjSeQbH>nEbSg40
+!s100 W6k<<g958N3NziLMfQ6bA1
+R10
+32
+R11
+!i10b 1
+R12
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/n_bit_adder.vhd|
+Z46 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/n_bit_adder.vhd|
+!i113 1
+R15
+R16
+Aa_my_nadder
+R5
+R6
+DEx4 work 9 my_nadder 0 22 1aXOU3kVjSeQbH>nEbSg40
+l17
+L12
+VgTC7]ebhie7bClVF9zfCO3
+!s100 2CzVUbCi4G]8GlCg7E3`43
+R10
+32
+R11
+!i10b 1
+R12
+R45
+R46
+!i113 1
+R15
+R16
+Enbit_reg
+Z47 w1652005658
+R5
+R6
+R7
+Z48 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/nBit_Reg.vhd
+Z49 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/nBit_Reg.vhd
+l0
+L3
+VaWR=V;2H26^K;30o2;Kaa1
+!s100 QaAZ[j1FZ@fI^?Ij36DWH3
+R10
+32
+R11
+!i10b 1
+R12
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/nBit_Reg.vhd|
+Z51 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/nBit_Reg.vhd|
+!i113 1
+R15
+R16
+Aarch1
+R5
+R6
+DEx4 work 8 nbit_reg 0 22 aWR=V;2H26^K;30o2;Kaa1
+l13
+L12
+VYeXl=O3Q>SjGef30Yb9oA0
+!s100 =<1g?1_n_Mo07me1m88^O0
+R10
+32
+R11
+!i10b 1
+R12
+R50
+R51
+!i113 1
+R15
+R16
+Eshift_one
+Z52 w1652002675
+Z53 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R2
+R3
+R4
+R5
+R6
+R7
+Z54 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/shift_one.vhd
+Z55 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/shift_one.vhd
+l0
+L6
+VZkOJIXhkWl81jCVEBd00<3
+!s100 @jZQ1[c<BbbY2[RWX>n@X2
+R10
+32
+R11
+!i10b 1
+R12
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/shift_one.vhd|
+Z57 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/shift_one.vhd|
+!i113 1
+R15
+R16
+Aarch1
+R53
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 shift_one 0 22 ZkOJIXhkWl81jCVEBd00<3
+l15
+L14
+VGM;4jfKFC9k7DzdFEmo>f3
+Z58 !s100 h9Y1R`VUfJ<096HEI_=Lo1
+R10
+32
+R11
+!i10b 1
+R12
+R56
+R57
+!i113 1
+R15
+R16
+Etop
+Z59 w1652007853
+R2
+R3
+R4
+R5
+R6
+R7
+Z60 8D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/top.vhd
+Z61 FD:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/top.vhd
+l0
+L5
+VfQ6zCX>[4`Kdd>nK4:^KE1
+!s100 7ZzK=jecoJNebiMU0McNP2
+R10
+32
+R11
+!i10b 1
+R12
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/top.vhd|
+Z63 !s107 D:/College/CMPN301/Lab exam sunday/Mostafa Hassanien Ahmed_1180581/top.vhd|
+!i113 1
+R15
+R16
+Aarch1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 top 0 22 fQ6zCX>[4`Kdd>nK4:^KE1
+l76
+L15
+V<D2M67HhgzfzkOU`5VOjT0
+!s100 hd=SKO_1_R:E0A2X:G>Y^1
+R10
+32
+R11
+!i10b 1
+R12
+R62
+R63
+!i113 1
+R15
+R16

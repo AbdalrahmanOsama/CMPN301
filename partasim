@@ -1,0 +1,32 @@
+vsim -gui work.parta
+add wave -position insertpoint  \
+sim:/parta/a \
+sim:/parta/b \
+sim:/parta/cin \
+sim:/parta/s \
+sim:/parta/f \
+sim:/parta/cout \
+sim:/parta/tempB
+force -freeze sim:/parta/a 00000001 0
+force -freeze sim:/parta/b 00000011 0
+force -freeze sim:/parta/cin 0 0
+noforce sim:/parta/s
+force -freeze sim:/parta/s 00 0
+run
+force -freeze sim:/parta/cin 1 0
+run
+force -freeze sim:/parta/cin 0 0
+run
+force -freeze sim:/parta/s 01 0
+run
+force -freeze sim:/parta/a 00000100 0
+force -freeze sim:/parta/cin 1 0
+run
+force -freeze sim:/parta/s 10 0
+run
+force -freeze sim:/parta/cin 0 0
+run
+force -freeze sim:/parta/s 11 0
+run
+force -freeze sim:/parta/cin 1 0
+run

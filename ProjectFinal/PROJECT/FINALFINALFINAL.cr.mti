@@ -1,0 +1,467 @@
+D:/College/CMPN301/ProjectFinal/PROJECT/half_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/half_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture my_adder of my_adder
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/BranchDecoder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/BranchDecoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchDecoder
+-- Compiling architecture archBranchDecoder of BranchDecoder
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/n_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/n_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity n_adder
+-- Compiling architecture a_n_adder of n_adder
+-- Loading entity adder
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/MUX2x1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/MUX2x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX2x1
+-- Compiling architecture MUX2x1_a of MUX2x1
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/decoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decoder
+-- Compiling architecture a_Decoder of Decoder
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/MEM_WB.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/MEM_WB.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MEM_WB_Buffer
+-- Compiling architecture MEM_WB_Buffer of MEM_WB_Buffer
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/flag_reg.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/flag_reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity onebit_reg
+-- Compiling architecture a_onebit_reg of onebit_reg
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/Alu.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/Alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity alu
+-- Compiling architecture arch_alu of alu
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/fulladder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/fulladder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fulladder
+-- Compiling architecture arch_fulladder of fulladder
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/sign_extend.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/sign_extend.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sign_extend_16_32
+-- Compiling architecture Behavioral of sign_extend_16_32
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/triStateBuffer.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/triStateBuffer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity triStateBuffer
+-- Compiling architecture triStateBufferA of triStateBuffer
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/forwarding.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/forwarding.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FWD
+-- Compiling architecture A_FWD of FWD
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/Decode_Stage.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/Decode_Stage.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decode_Stage
+-- Compiling architecture a_Decode_Stage of Decode_Stage
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/CONTROLUNIT.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/CONTROLUNIT.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity control
+-- Compiling architecture control_arch of control
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/HazardDetectionUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/HazardDetectionUnit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity HazardDetectionUnit
+-- Compiling architecture archHDU of HazardDetectionUnit
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/ID_EX.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/ID_EX.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ID_EX_Buffer
+-- Compiling architecture ID_EX_Buffer of ID_EX_Buffer
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/SIGN_EXTEND_2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/SIGN_EXTEND_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sign_extend_2_32
+-- Compiling architecture Behavioral of sign_extend_2_32
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/aluCU.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/aluCU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity aluCU
+-- Compiling architecture arch_aluCU of aluCU
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/IF_ID.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/IF_ID.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity IF_ID_Buffer
+-- Compiling architecture IF_ID_Buffer of IF_ID_Buffer
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/WB_Stage.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/WB_Stage.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity WB_Stage
+-- Compiling architecture WB_STAGE_A of WB_Stage
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity processor
+-- Compiling architecture arch_processor of processor
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(370): near ")": syntax error
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(371): Statement cannot be labeled.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(371): near ")": syntax error
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(372): Statement cannot be labeled.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(372): near ")": syntax error
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(373): Statement cannot be labeled.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(373): near ")": syntax error
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Statement cannot be labeled.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M101" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M200" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M105" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Cannot assign to object "CLK_processor" of mode IN.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M500" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M107" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M203" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M204" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M108" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): Signal "M109" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): (vcom-1035) Formal port "mux24" has OPEN or no actual associated with it.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(375): near ",": syntax error
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(376): Statement cannot be labeled.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(376): (vcom-1136) Unknown identifier "CLK_process".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(376): Signal "W12" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(376): Signal "W7" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(377): near ")": syntax error
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(379): Statement cannot be labeled.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(379): (vcom-1027) Number of positional association elements (27) exceeds number of formals (26).
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(380): Signal "HZ19" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(380): Signal "HZ200" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(380): (vcom-1136) Unknown identifier "HZ22".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(380): (vcom-1136) Unknown identifier "HZ23".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(380): (vcom-1136) Unknown identifier "HZ24".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(381): (vcom-1136) Unknown identifier "access2".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(381): (vcom-1136) Unknown identifier "access3".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(382): (vcom-1136) Unknown identifier "HZ24".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(383): (vcom-1136) Unknown identifier "MEM202".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(383): (vcom-1136) Unknown identifier "HZ24".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(384): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(384): Signal "M108" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(384): (vcom-1136) Unknown identifier "HZ24".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(384): Signal "access100" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(385): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(385): Signal "M109" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(385): (vcom-1136) Unknown identifier "HZ24".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(385): Signal "access101" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(386): (vcom-1136) Unknown identifier "HZ24".
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(386): Signal "M203" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(388): Symbol "v16" has already been declared in this region.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(388): near ")": syntax error
+** Error (suppressible): D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): (vcom-1272) Length of formal "operandsselect" is 2; length of actual is 20.
+** Error (suppressible): D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(374): (vcom-1272) Length of formal "addparsed" is 20; length of actual is 32.
+** Error (suppressible): D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(376): (vcom-1272) Length of formal "REG_DATA_2" is 32; length of actual is 3.
+** Error (suppressible): D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(380): (vcom-1272) Length of formal "address_wr" is 7; length of actual is 32.
+** Error: D:/College/CMPN301/ProjectFinal/PROJECT/Processor.vhd(389): VHDL Compiler exiting
+
+} {9.0 58.0 62.0 63.0} {}} D:/College/CMPN301/ProjectFinal/PROJECT/WB_Control.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/WB_Control.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity WB_Control
+-- Compiling architecture WB_C_A of WB_Control
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/memory.vhd {2 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/memory.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity memory
+-- Compiling architecture memory_arch of memory
+** Warning: D:/College/CMPN301/ProjectFinal/PROJECT/memory.vhd(30): (vcom-1283) Cannot reference file "Mem_File" inside pure function "Initialize_Memory".
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/memory_access.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/memory_access.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory_access
+-- Compiling architecture access_architecture of memory_access
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/singleunit.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/singleunit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity singleunit
+-- Compiling architecture arch_singleunit of singleunit
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/Execution_Control.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/Execution_Control.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Execution_Control
+-- Compiling architecture E_CU_A of Execution_Control
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/memory_stage.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/memory_stage.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory_stage
+-- Compiling architecture memory_stage_arch of memory_stage
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/MUX2x2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/MUX2x2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX2x2
+-- Compiling architecture MUX2x2_a of MUX2x2
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/CCR_File.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/CCR_File.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity CCR
+-- Compiling architecture CCR_A of CCR
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/MUX4x1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/MUX4x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX4x1
+-- Compiling architecture MUX4x1_a of MUX4x1
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/memory_CU.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/memory_CU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memory_CU
+-- Compiling architecture A_memory_CU of memory_CU
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/basic_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/basic_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity basic_adder
+-- Compiling architecture arch_basic_adder of basic_adder
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/EX_MEM.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/EX_MEM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity EX_MEM_Buffer
+-- Compiling architecture EX_MEM_Buffer of EX_MEM_Buffer
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/MUX8x1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/MUX8x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX8x1
+-- Compiling architecture MUX8x1_a of MUX8x1
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/PROCESSING.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/PROCESSING.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity processing
+-- Compiling architecture arch_processor of processing
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/stack_pointer.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/stack_pointer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity stack_reg
+-- Compiling architecture stack_reg of stack_reg
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/Execution_Stage.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/Execution_Stage.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Execution_Stage
+-- Compiling architecture EXEC_STAGE_A of Execution_Stage
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/fetch.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/fetch.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fetch
+-- Compiling architecture fetch_arch of fetch
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/Fetxh_Stage.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/Fetxh_Stage.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/College/CMPN301/ProjectFinal/PROJECT/Fetxh_Stage.vhd(2): (vcom-1491) Empty source files.
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/RegisterFile.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/RegisterFile.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegisterFile
+-- Compiling architecture a_RegisterFile of RegisterFile
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/DMUX2x1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/DMUX2x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DMUX2x1
+-- Compiling architecture arch_DMUX2x1 of DMUX2x1
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/BranchExec.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/BranchExec.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchExec
+-- Compiling architecture archBranchExec of BranchExec
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/DMUX2X4.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/DMUX2X4.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX4x2
+-- Compiling architecture MUX4x2_a of MUX4x2
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/shiftreg.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/shiftreg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity shift_register2
+-- Compiling architecture Behavioral of shift_register2
+
+} {} {}} {D:/College/CMPN301/ProjectFinal/PROJECT/a_my _adder.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/College/CMPN301/ProjectFinal/PROJECT/a_my _adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity a_my_adder
+-- Compiling architecture a_my_adder of a_my_adder
+** Warning: D:/College/CMPN301/ProjectFinal/PROJECT/a_my _adder.vhd(25): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/reg.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture a_reg of reg
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/adder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder
+-- Compiling architecture a_adder of adder
+
+} {} {}} D:/College/CMPN301/ProjectFinal/PROJECT/Registers.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ProjectFinal/PROJECT/Registers.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Registers
+-- Compiling architecture a_Registers of Registers
+
+} {} {}}

@@ -1,0 +1,18 @@
+vsim -gui work.nbitadder
+add wave -position insertpoint  \
+sim:/nbitadder/a \
+sim:/nbitadder/b \
+sim:/nbitadder/cin \
+sim:/nbitadder/s \
+sim:/nbitadder/cout
+force -freeze sim:/nbitadder/a 00000001 0
+force -freeze sim:/nbitadder/a 00000001 0
+force -freeze sim:/nbitadder/b 00000001 0
+force -freeze sim:/nbitadder/cin 0 0
+run
+force -freeze sim:/nbitadder/a 10000000 0
+force -freeze sim:/nbitadder/b 10000000 0
+run
+force -freeze sim:/nbitadder/b 00000000 0
+force -freeze sim:/nbitadder/cin 1 0
+run

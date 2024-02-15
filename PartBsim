@@ -1,0 +1,17 @@
+vsim -gui work.partb
+add wave -position insertpoint  \
+sim:/partb/A \
+sim:/partb/B \
+sim:/partb/Sel \
+sim:/partb/F \
+sim:/partb/Cout
+force -freeze sim:/partb/A 10011101 0
+force -freeze sim:/partb/B 11101101 0
+force -freeze sim:/partb/Sel 00 0
+run
+force -freeze sim:/partb/Sel 01 0
+run
+force -freeze sim:/partb/Sel 10 0
+run
+force -freeze sim:/partb/Sel 11 0
+run

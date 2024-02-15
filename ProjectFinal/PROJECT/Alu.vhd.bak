@@ -1,0 +1,93 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+
+--bos ya bro, el output beta3 el alu awel bit (msb) howa el reset flag, tany bit lel carry flag, wel 32 ely 3al yemeen dol output value beta3 A+B for example
+
+entity alu is  
+
+
+
+GENERIC (n : integer := 32);
+
+port(
+	-- CLK: in std_logic;
+	 En: in std_logic;
+ 	   a : in std_logic_vector(n-1 downto 0);
+  	  b : in std_logic_vector(n-1 downto 0);
+    
+
+      s: in std_logic_vector(2 downto 0);
+
+aluOUT: out std_logic_vector(n+1 downto 0) --(n+1) 3ashan heya n-1+1+1
+
+);
+
+end alu;
+
+
+
+-------------------------------------
+-------------------------------------
+
+
+Architecture arch_alu of alu is
+
+component singleunit is
+GENERIC (n : integer := 32);
+
+port(
+
+
+   -- CLK: in std_logic;
+    En: in std_logic;
+    a : in std_logic_vector(n-1 downto 0);
+    b : in std_logic_vector(n-1 downto 0);
+    
+
+      s: in std_logic_vector(2 downto 0);
+  
+    --cin: in std_logic;
+
+    f: out std_logic_vector(n-1 downto 0);
+    --cout: out std_logic;
+    CFout: out std_logic;
+    --flagreset: out std_logic_vector(2 downto 0) -- ether 111 or Z da el 3 bit version
+    flagreset: out std_logic                 -- ether 111 or Z da el 1 bit version
+     
+
+
+
+
+);
+
+end component;
+
+
+
+signal aluFsig: std_logic_vector(n-1 DOWNTO 0);
+signal aluCFoutsig: std_logic;
+signal aluFlagResetsig: std_logic;
+
+
+
+
+
+
+
+begin
+
+
+
+
+Keepol_3adaweya : singleunit generic map (32) port map (En, a, b, s, aluFsig, aluCFoutsig, aluFlagResetsig);
+
+
+
+
+aluOUT <= aluFlagResetsig & aluCFoutsig & aluFsig;
+
+end arch_alu;
+  

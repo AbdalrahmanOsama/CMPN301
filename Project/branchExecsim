@@ -1,0 +1,46 @@
+vsim -gui work.branchexec
+# vsim -gui work.branchexec 
+# Start time: 22:34:21 on May 13,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.branchexec(archbranchexec)
+add wave -position insertpoint  \
+sim:/branchexec/TargetAddress \
+sim:/branchexec/BranchType \
+sim:/branchexec/en \
+sim:/branchexec/clk \
+sim:/branchexec/FlagStatus \
+sim:/branchexec/JumpDecision \
+sim:/branchexec/JumpAddress
+force -freeze sim:/branchexec/TargetAddress 16#62 0
+force -freeze sim:/branchexec/BranchType 00 0
+force -freeze sim:/branchexec/en 0 0
+force -freeze sim:/branchexec/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/branchexec/FlagStatus 000 0
+run
+run
+force -freeze sim:/branchexec/en 1 0
+run
+force -freeze sim:/branchexec/FlagStatus 001 0
+run
+run
+run
+force -freeze sim:/branchexec/FlagStatus 010 0
+run
+run
+force -freeze sim:/branchexec/BranchType 01 0
+run
+run
+force -freeze sim:/branchexec/BranchType 10 0
+run
+run
+force -freeze sim:/branchexec/FlagStatus 100 0
+run
+run
+run
+run
+force -freeze sim:/branchexec/BranchType 11 0
+force -freeze sim:/branchexec/FlagStatus 000 0
+run
+run

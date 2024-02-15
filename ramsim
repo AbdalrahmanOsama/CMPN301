@@ -1,0 +1,25 @@
+vsim -gui work.ram
+# vsim -gui work.ram 
+# Start time: 14:10:45 on Mar 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram(syncrama)
+add wave -position insertpoint  \
+sim:/ram/clk \
+sim:/ram/we \
+sim:/ram/re \
+sim:/ram/address \
+sim:/ram/datain \
+sim:/ram/dataout
+force -freeze sim:/ram/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/ram/we 1 0
+force -freeze sim:/ram/re 0 0
+force -freeze sim:/ram/address 16#0200 0
+force -freeze sim:/ram/datain 16#0001 0
+run
+force -freeze sim:/ram/re 1 0
+force -freeze sim:/ram/we 0 0
+force -freeze sim:/ram/datain 0000000000000010 0
+run

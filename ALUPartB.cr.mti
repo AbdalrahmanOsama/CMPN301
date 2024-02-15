@@ -1,0 +1,149 @@
+D:/College/CMPN301/ram.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ram.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture syncrama of ram
+
+} {} {}} D:/College/CMPN301/RegisterandDecoders.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/RegisterandDecoders.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegisterArray
+-- Compiling architecture archRegisterArray of RegisterArray
+
+} {} {}} D:/College/CMPN301/Lab4integrated.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Lab4integrated.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Lab4Integrated
+-- Compiling architecture archLab4 of Lab4Integrated
+
+} {} {}} D:/College/CMPN301/TristateBuffer.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/TristateBuffer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TristateBuffer
+-- Compiling architecture archTriBuff of TristateBuffer
+
+} {} {}} D:/College/CMPN301/BranchDecoder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/BranchDecoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchDecoder
+-- Compiling architecture archBranchDecoder of BranchDecoder
+
+} {} {}} D:/College/CMPN301/doubledabble.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/doubledabble.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DoubleDabble
+-- Compiling architecture archDoubleDabble of DoubleDabble
+
+} {} {}} D:/College/CMPN301/my_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/my_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture a_my_adder of my_adder
+
+} {} {}} D:/College/CMPN301/Decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Decoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decoder
+-- Compiling architecture archDecoder of Decoder
+
+} {} {}} D:/College/CMPN301/Counter.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Counter
+-- Compiling architecture archCounter of Counter
+
+} {} {}} D:/College/CMPN301/PartA.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/PartA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PartA
+-- Compiling architecture archPartA of PartA
+
+} {} {}} D:/College/CMPN301/dflipflop.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/dflipflop.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_DFF
+-- Compiling architecture a_my_DFF of my_DFF
+
+} {} {}} D:/College/CMPN301/ControlUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/ControlUnit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ControlUnit
+-- Compiling architecture archCU of ControlUnit
+
+} {} {}} D:/College/CMPN301/PartBCDCombined.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/PartBCDCombined.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PartBCDCombined
+-- Compiling architecture archPartBCDCombined of PartBCDCombined
+
+} {} {}} D:/College/CMPN301/PartB.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/PartB.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PartB
+-- Compiling architecture archPartB of PartB
+
+} {} {}} D:/College/CMPN301/Register32bit.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Register32bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nDFF
+-- Compiling architecture a_my_nDFF of my_nDFF
+
+} {} {}} D:/College/CMPN301/PartC.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/PartC.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PartC
+-- Compiling architecture archPartC of PartC
+
+} {} {}} D:/College/CMPN301/PartD.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/PartD.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PartD
+-- Compiling architecture archPartD of PartD
+
+} {} {}} D:/College/CMPN301/NbitAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/NbitAdder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nBitAdder
+-- Compiling architecture archnBitAdder of nBitAdder
+
+} {} {}}

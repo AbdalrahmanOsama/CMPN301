@@ -1,0 +1,32 @@
+vsim -gui work.counter
+# vsim -gui work.counter 
+# Start time: 14:38:39 on Mar 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter(archcounter)
+add wave -position insertpoint  \
+sim:/counter/en \
+sim:/counter/clk \
+sim:/counter/rs \
+sim:/counter/count
+force -freeze sim:/counter/en 0 0
+force -freeze sim:/counter/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/counter/rs 1 0
+run
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /counter
+run
+force -freeze sim:/counter/rs 0 0
+force -freeze sim:/counter/en 1 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/counter/en 0 0
+run
+run
+run

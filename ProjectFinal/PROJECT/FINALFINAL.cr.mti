@@ -1,0 +1,407 @@
+{D:/Junior/Computer Architecture/FINALFINAL/ID_EX.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/ID_EX.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ID_EX_Buffer
+-- Compiling architecture ID_EX_Buffer of ID_EX_Buffer
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/SIGN_EXTEND_2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\SIGN_EXTEND_2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sign_extend_2_32
+-- Compiling architecture Behavioral of sign_extend_2_32
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/basic_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/basic_adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity basic_adder
+-- Compiling architecture arch_basic_adder of basic_adder
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/WB_Control.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/WB_Control.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity WB_Control
+-- Compiling architecture WB_C_A of WB_Control
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/DMUX2x1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/DMUX2x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DMUX2x1
+-- Compiling architecture arch_DMUX2x1 of DMUX2x1
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/HazardDetectionUnit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\HazardDetectionUnit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity HazardDetectionUnit
+-- Compiling architecture archHDU of HazardDetectionUnit
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/memory.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\memory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity memory
+-- Compiling architecture memory_arch of memory
+** Warning: D:\Junior\Computer Architecture\FINALFINAL\memory.vhd(30): (vcom-1283) Cannot reference file "Mem_File" inside pure function "Initialize_Memory".
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/triStateBuffer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/triStateBuffer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity triStateBuffer
+-- Compiling architecture triStateBufferA of triStateBuffer
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/aluCU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/aluCU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity aluCU
+-- Compiling architecture arch_aluCU of aluCU
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/singleunit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/singleunit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity singleunit
+-- Compiling architecture arch_singleunit of singleunit
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/Alu.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\Alu.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity alu
+-- Compiling architecture arch_alu of alu
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/half_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/half_adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture my_adder of my_adder
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/IF_ID.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/IF_ID.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity IF_ID_Buffer
+-- Compiling architecture IF_ID_Buffer of IF_ID_Buffer
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/forwarding.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/forwarding.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FWD
+-- Compiling architecture A_FWD of FWD
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/fulladder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/fulladder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fulladder
+-- Compiling architecture arch_fulladder of fulladder
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/memory_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\memory_stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory_stage
+-- Compiling architecture memory_stage_arch of memory_stage
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/DMUX2X4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/DMUX2X4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX4x2
+-- Compiling architecture MUX4x2_a of MUX4x2
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/MUX2x1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\MUX2x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX2x1
+-- Compiling architecture MUX2x1_a of MUX2x1
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/a_my _adder.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/a_my _adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity a_my_adder
+-- Compiling architecture a_my_adder of a_my_adder
+** Warning: D:/Junior/Computer Architecture/FINALFINAL/a_my _adder.vhd(25): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/RegisterFile.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\RegisterFile.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegisterFile
+-- Compiling architecture a_RegisterFile of RegisterFile
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/MUX2x2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/MUX2x2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX2x2
+-- Compiling architecture MUX2x2_a of MUX2x2
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\reg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture a_reg of reg
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/stack_pointer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/stack_pointer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity stack_reg
+-- Compiling architecture stack_reg of stack_reg
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/flag_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/flag_reg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity onebit_reg
+-- Compiling architecture a_onebit_reg of onebit_reg
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/Decode_Stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\Decode_Stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decode_Stage
+-- Compiling architecture a_Decode_Stage of Decode_Stage
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/MEM_WB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/MEM_WB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MEM_WB_Buffer
+-- Compiling architecture MEM_WB_Buffer of MEM_WB_Buffer
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/CCR_File.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\CCR_File.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity CCR
+-- Compiling architecture CCR_A of CCR
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/Execution_Stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\Execution_Stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Execution_Stage
+-- Compiling architecture EXEC_STAGE_A of Execution_Stage
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/MUX4x1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\MUX4x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX4x1
+-- Compiling architecture MUX4x1_a of MUX4x1
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/Registers.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\Registers.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Registers
+-- Compiling architecture a_Registers of Registers
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/sign_extend.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\sign_extend.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sign_extend_16_32
+-- Compiling architecture Behavioral of sign_extend_16_32
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder
+-- Compiling architecture a_adder of adder
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/memory_access.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/memory_access.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory_access
+-- Compiling architecture access_architecture of memory_access
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/fetch.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/fetch.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fetch
+-- Compiling architecture fetch_arch of fetch
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/PC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/PC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PC
+-- Compiling architecture PC of PC
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/BranchExec.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/BranchExec.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchExec
+-- Compiling architecture archBranchExec of BranchExec
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/EX_MEM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\EX_MEM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity EX_MEM_Buffer
+-- Compiling architecture EX_MEM_Buffer of EX_MEM_Buffer
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/MUX8x1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\MUX8x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX8x1
+-- Compiling architecture MUX8x1_a of MUX8x1
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/shiftreg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/shiftreg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity shift_register2
+-- Compiling architecture Behavioral of shift_register2
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/Execution_Control.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\Execution_Control.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Execution_Control
+-- Compiling architecture E_CU_A of Execution_Control
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/BranchDecoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/BranchDecoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchDecoder
+-- Compiling architecture archBranchDecoder of BranchDecoder
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/WB_Stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\WB_Stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity WB_Stage
+-- Compiling architecture WB_STAGE_A of WB_Stage
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/n_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/n_adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity n_adder
+-- Compiling architecture a_n_adder of n_adder
+-- Loading entity adder
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/PROCESSING.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\PROCESSING.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity processing
+-- Compiling architecture arch_processor of processing
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/Fetchstage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\Fetchstage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fetch_stage
+-- Compiling architecture arch_fetcher of fetch_stage
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Junior/Computer Architecture/FINALFINAL/decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decoder
+-- Compiling architecture a_Decoder of Decoder
+
+} {} {}} {D:/Junior/Computer Architecture/FINALFINAL/memory_CU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Junior\Computer Architecture\FINALFINAL\memory_CU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memory_CU
+-- Compiling architecture A_memory_CU of memory_CU
+
+} {} {}}

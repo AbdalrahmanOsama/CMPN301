@@ -1,0 +1,62 @@
+# Current time Sun May 29 00:02:48 2022
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x00ca685a: '<unknown (@0xca685a)>'
+# 1    0x00ca4d21: '<unknown (@0xca4d21)>'
+# 2    0x005eed2c: '<unknown (@0x5eed2c)>'
+# 3    0x008f5436: '<unknown (@0x8f5436)>'
+# 4    0x008f8cff: '<unknown (@0x8f8cff)>'
+# 5    0x008f8c57: '<unknown (@0x8f8c57)>'
+# 6    0x008f8c57: '<unknown (@0x8f8c57)>'
+# 7    0x008f9baa: '<unknown (@0x8f9baa)>'
+# 8    0x008f257c: '<unknown (@0x8f257c)>'
+# 9    0x008ff34c: '<unknown (@0x8ff34c)>'
+# 10   0x00b20633: '<unknown (@0xb20633)>'
+# 11   0x00b21188: '<unknown (@0xb21188)>'
+# 12   0x00b1e244: '<unknown (@0xb1e244)>'
+# 13   0x008ff92d: '<unknown (@0x8ff92d)>'
+# 14   0x5a52e716: 'Tcl_ListMathFuncs + 0x456' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 15   0x5a52f37e: 'Tcl_EvalEx + 0x80e' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 16   0x5a52eb8c: 'Tcl_EvalEx + 0x1c' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 17   0x00c93007: '<unknown (@0xc93007)>'
+# 18   0x5a581795: 'Tcl_NotifyChannel + 0x125' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 19   0x5a5d0272: 'TclpHasSockets + 0x362' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Sun May 29 00:05:40 2022
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x00ca685a: '<unknown (@0xca685a)>'
+# 1    0x00ca4d21: '<unknown (@0xca4d21)>'
+# 2    0x005eed2c: '<unknown (@0x5eed2c)>'
+# 3    0x008f5436: '<unknown (@0x8f5436)>'
+# 4    0x008f8cff: '<unknown (@0x8f8cff)>'
+# 5    0x008f8c57: '<unknown (@0x8f8c57)>'
+# 6    0x008f8c57: '<unknown (@0x8f8c57)>'
+# 7    0x008f9baa: '<unknown (@0x8f9baa)>'
+# 8    0x008f257c: '<unknown (@0x8f257c)>'
+# 9    0x008ff34c: '<unknown (@0x8ff34c)>'
+# 10   0x00b20633: '<unknown (@0xb20633)>'
+# 11   0x00b21188: '<unknown (@0xb21188)>'
+# 12   0x00b1e244: '<unknown (@0xb1e244)>'
+# 13   0x008ff92d: '<unknown (@0x8ff92d)>'
+# 14   0x5a5fe716: 'Tcl_ListMathFuncs + 0x456' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 15   0x5a5ff37e: 'Tcl_EvalEx + 0x80e' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 16   0x5a5feb8c: 'Tcl_EvalEx + 0x1c' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 17   0x00c93007: '<unknown (@0xc93007)>'
+# 18   0x5a651795: 'Tcl_NotifyChannel + 0x125' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# 19   0x5a6a0272: 'TclpHasSockets + 0x362' in 'c:\intelfpga\18.0\modelsim_ase\win32aloem\tcl85.dll'
+# End of Stack Trace
+
+

@@ -1,0 +1,49 @@
+{D:/College/CMPN301/Dina's Part/Registers.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/College/CMPN301/Dina's Part/Registers.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Registers
+-- Compiling architecture a_Registers of Registers
+
+} {} {}} {D:/College/CMPN301/Dina's Part/RegisterFile.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/College/CMPN301/Dina's Part/RegisterFile.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegisterFile
+-- Compiling architecture a_RegisterFile of RegisterFile
+
+} {} {}} {D:/College/CMPN301/Dina's Part/MUX2x1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/College/CMPN301/Dina's Part/MUX2x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX2x1
+-- Compiling architecture MUX2x1_a of MUX2x1
+
+} {} {}} {D:/College/CMPN301/Dina's Part/triStateBuffer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/College/CMPN301/Dina's Part/triStateBuffer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity triStateBuffer
+-- Compiling architecture triStateBufferA of triStateBuffer
+
+} {} {}} {D:/College/CMPN301/Dina's Part/decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/College/CMPN301/Dina's Part/decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decoder
+-- Compiling architecture a_Decoder of Decoder
+
+} {} {}} {D:/College/CMPN301/Dina's Part/Decode_Stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/College/CMPN301/Dina's Part/Decode_Stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decode_Stage
+-- Compiling architecture a_Decode_Stage of Decode_Stage
+
+} {} {}}

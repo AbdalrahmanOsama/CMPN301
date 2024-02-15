@@ -1,0 +1,14 @@
+vsim PartBCDCombined.vhd -gn=16
+# OpenFile PartBCDCombined.vhd
+add wave -position insertpoint  \
+sim:/partbcdcombined/in1 \
+sim:/partbcdcombined/in2 \
+sim:/partbcdcombined/Sel1 \
+sim:/partbcdcombined/Cin1 \
+sim:/partbcdcombined/out1 \
+sim:/partbcdcombined/Cout1
+force -freeze sim:/partbcdcombined/in1 1000101101101010 0
+force -freeze sim:/partbcdcombined/in2 1111111111111111 0
+force -freeze sim:/partbcdcombined/Sel1 0110 0
+force -freeze sim:/partbcdcombined/Cin1 0 0
+run

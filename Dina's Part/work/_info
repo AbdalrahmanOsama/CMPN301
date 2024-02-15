@@ -1,0 +1,244 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/College/CMPN301/Project
+Edecode_stage
+Z0 w1653594302
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/College/CMPN301/Dina's Part
+Z4 8D:/College/CMPN301/Dina's Part/Decode_Stage.vhd
+Z5 FD:/College/CMPN301/Dina's Part/Decode_Stage.vhd
+l0
+L3
+V1e]W1=9QS1HHA8GKUc?D[0
+!s100 KVGPSP`TR>fO2HUDY>44@3
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1653594305
+!i10b 1
+Z8 !s108 1653594305.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Dina's Part/Decode_Stage.vhd|
+Z10 !s107 D:/College/CMPN301/Dina's Part/Decode_Stage.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aa_decode_stage
+R1
+R2
+DEx4 work 12 decode_stage 0 22 1e]W1=9QS1HHA8GKUc?D[0
+l67
+L31
+V6UdlL<=c=hI9=l0dSDDYl1
+!s100 ^J9WB@@7jH2AVjGQZCh6i3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edecoder
+Z13 w1653595991
+R1
+R2
+R3
+Z14 8D:/College/CMPN301/Dina's Part/decoder.vhd
+Z15 FD:/College/CMPN301/Dina's Part/decoder.vhd
+l0
+L4
+Vj_;S7VZ:OCHoc4XYR_Bnm1
+!s100 E^@dI7^6IQQ;NlA96=WfZ1
+R6
+32
+Z16 !s110 1653596040
+!i10b 1
+Z17 !s108 1653596040.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Dina's Part/decoder.vhd|
+Z19 !s107 D:/College/CMPN301/Dina's Part/decoder.vhd|
+!i113 1
+R11
+R12
+Aa_decoder
+R1
+R2
+DEx4 work 7 decoder 0 22 j_;S7VZ:OCHoc4XYR_Bnm1
+l15
+L14
+V:NWSUH=a1kmH^_dBa3:ij2
+!s100 Bid<2I3I8MP5OLi9m9Xb50
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Emux2x1
+Z20 w1653595936
+R1
+R2
+R3
+Z21 8D:/College/CMPN301/Dina's Part/MUX2x1.vhd
+Z22 FD:/College/CMPN301/Dina's Part/MUX2x1.vhd
+l0
+L4
+V;djK1I1jU?cCmgDLBBO9P3
+!s100 P5bnnP;;78dbRP_cR1mCC2
+R6
+32
+R16
+!i10b 1
+R17
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Dina's Part/MUX2x1.vhd|
+Z24 !s107 D:/College/CMPN301/Dina's Part/MUX2x1.vhd|
+!i113 1
+R11
+R12
+Amux2x1_a
+R1
+R2
+DEx4 work 6 mux2x1 0 22 ;djK1I1jU?cCmgDLBBO9P3
+l18
+L17
+VLR><[n8AAh;D4?7IPGSli2
+!s100 V9@DT8Gb[@fi?1_FOJJTA2
+R6
+32
+R16
+!i10b 1
+R17
+R23
+R24
+!i113 1
+R11
+R12
+Eregisterfile
+Z25 w1653594366
+R1
+R2
+R3
+Z26 8D:/College/CMPN301/Dina's Part/RegisterFile.vhd
+Z27 FD:/College/CMPN301/Dina's Part/RegisterFile.vhd
+l0
+L5
+V?LDz]5`lgBK]>m>o6fCaP1
+!s100 R8>Ic;2U46FJZN`_62Coe1
+R6
+32
+Z28 !s110 1653594367
+!i10b 1
+Z29 !s108 1653594367.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Dina's Part/RegisterFile.vhd|
+Z31 !s107 D:/College/CMPN301/Dina's Part/RegisterFile.vhd|
+!i113 1
+R11
+R12
+Aa_registerfile
+R1
+R2
+DEx4 work 12 registerfile 0 22 ?LDz]5`lgBK]>m>o6fCaP1
+l60
+L19
+VRLZ;==LW]EiU<iXfVmVj62
+!s100 :heU>5_<]V?`Ch[8f@KJk0
+R6
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R11
+R12
+Eregisters
+Z32 w1653593521
+R1
+R2
+R3
+Z33 8D:/College/CMPN301/Dina's Part/Registers.vhd
+Z34 FD:/College/CMPN301/Dina's Part/Registers.vhd
+l0
+L5
+V;FzEP1AU^jkeAI`SAd2mA1
+!s100 d9[ElemS5C<S=WMAKDYa;0
+R6
+32
+Z35 !s110 1653593617
+!i10b 1
+Z36 !s108 1653593617.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Dina's Part/Registers.vhd|
+Z38 !s107 D:/College/CMPN301/Dina's Part/Registers.vhd|
+!i113 1
+R11
+R12
+Aa_registers
+R1
+R2
+DEx4 work 9 registers 0 22 ;FzEP1AU^jkeAI`SAd2mA1
+l15
+L14
+VfK^2aA:]FlL?WbNToOi:@0
+!s100 ;Dl06SiKCczIP4Tk;@QcT2
+R6
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R11
+R12
+Etristatebuffer
+R20
+R1
+R2
+R3
+Z39 8D:/College/CMPN301/Dina's Part/triStateBuffer.vhd
+Z40 FD:/College/CMPN301/Dina's Part/triStateBuffer.vhd
+l0
+L3
+V:_H]A>L@DM^[IFGz:U?aU3
+!s100 J2gA>TafF:7eIUXZniB4_3
+R6
+32
+R16
+!i10b 1
+R17
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/College/CMPN301/Dina's Part/triStateBuffer.vhd|
+Z42 !s107 D:/College/CMPN301/Dina's Part/triStateBuffer.vhd|
+!i113 1
+R11
+R12
+Atristatebuffera
+R1
+R2
+DEx4 work 14 tristatebuffer 0 22 :_H]A>L@DM^[IFGz:U?aU3
+l13
+L11
+VJ?VRJ=@R[`dC;liiLjY@C3
+!s100 ;AkbJ;5o]STecKF<EPaJH2
+R6
+32
+R16
+!i10b 1
+R17
+R41
+R42
+!i113 1
+R11
+R12

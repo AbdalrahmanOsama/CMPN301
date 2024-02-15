@@ -1,0 +1,23 @@
+vsim -gui work.partc
+add wave -position insertpoint  \
+sim:/partc/A \
+sim:/partc/Cin \
+sim:/partc/Sel \
+sim:/partc/F \
+sim:/partc/Cout
+force -freeze sim:/partc/A 11110000 0
+force -freeze sim:/partc/Cin 1 0
+force -freeze sim:/partc/Sel 00 0
+run
+force -freeze sim:/partc/A 01110000 0
+run
+force -freeze sim:/partc/A 11110000 0
+force -freeze sim:/partc/Sel 01 0
+run
+force -freeze sim:/partc/Sel 10 0
+run
+force -freeze sim:/partc/Cin 0 0
+run
+force -freeze sim:/partc/Sel 11 0
+run
+run

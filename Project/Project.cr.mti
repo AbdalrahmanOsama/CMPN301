@@ -1,0 +1,38 @@
+D:/College/CMPN301/Project/BranchExec.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Project/BranchExec.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchExec
+-- Compiling architecture archBranchExec of BranchExec
+
+} {} {}} D:/College/CMPN301/Project/BranchDecoder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Project/BranchDecoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BranchDecoder
+-- Compiling architecture archBranchDecoder of BranchDecoder
+
+} {} {}} D:/College/CMPN301/Project/HazardDetectionUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Project/HazardDetectionUnit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity HazardDetectionUnit
+-- Compiling architecture archHDU of HazardDetectionUnit
+
+} {} {}} D:/College/CMPN301/Project/memorytrial.vhd {2 {vcom -work work -2002 -explicit -stats=none D:/College/CMPN301/Project/memorytrial.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity mem_array
+-- Compiling architecture behavioral of mem_array
+** Warning: D:/College/CMPN301/Project/memorytrial.vhd(37): (vcom-1283) Cannot reference file "mif_file" inside pure function "init_memory_wfile".
+
+} {} {}}
