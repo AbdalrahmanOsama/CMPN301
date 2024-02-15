@@ -1,0 +1,75 @@
+LIBRARY IEEE;
+LIBRARY BASICLOGIC;
+USE IEEE.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+USE IEEE.math_real.all;
+
+USE BASICLOGIC.custom_types.all;
+USE BASICLOGIC.ALL;
+
+--Todo: Add inputs and outputs for interuputs and flags
+ENTITY ControlUnit IS
+	PORT(
+	OPCode : IN std_logic_vector(6 DOWNTO 0);
+	ALU_Flag_Enable : OUT STD_LOGIC;
+	ALU_Operation : OUT std_logic_vector(4 DOWNTO 0);
+	Immediate_Value : OUT STD_LOGIC;
+	Writeback_Enable : OUT STD_LOGIC;
+	Memory_Read_Enable : OUT std_logic_vector(1 DOWNTO 0);
+    Memory_Write_Enable : OUT std_logic_vector(1 DOWNTO 0)
+	);
+END ControlUnit;
+
+ARCHITECTURE structure OF ControlUnit IS
+alias opcode_type: std_logic_vector(1 downto 0) is OPCode(6 downto 5);
+alias opcode_config: std_logic_vector(1 downto 0) is OPCode(4 downto 3);
+alias opcode_Num: std_logic_vector(2 downto 0) is OPCode(2 downto 0);
+BEGIN
+	--ALU_Flag_Enable operations:
+	Alu_flag_Enable <= '1' when opcode_type = "01"
+		else '0';
+	--ALU_Operation operations:
+	Alu_operation <= "00101" when opcode_config = "00" and opcode_num = "000" --AND
+		else "00100" when opcode_config = "00" and opcode_num = "001" --OR
+		else "00111" when opcode_config = "00" and opcode_num = "100" --NOT
+		else "00001" when opcode_config = "00" and opcode_num = "010" --ADD
+		else "10000" when opcode_config = "00" and opcode_num = "110" --INC
+		else "00001" when opcode_config = "01" and opcode_num = "010" --IADD
+		else "10010" when opcode_config = "00" and opcode_num = "011" --SUB
+		else "00011" when opcode_config = "00" and opcode_num = "111" --DEC
+		else "10011" when opcode_config = "01" and opcode_num = "100" --LDM
+		else "00000";
+	--Immediate_Value operations:
+	Immediate_Value <= '1' when opcode_config = "10"
+		else '0';
+	-- Writeback_Enable operations
+	Writeback_Enable <= '1' when opcode = "0000000" -- nop
+		else '1' when opcode = "0111000" -- And
+		else '1' when opcode = "0101010" -- inc 
+		else '1' when opcode = "1001000" --ldd
+		else '0' when opcode = "1011001" -- std
+		else '1' when opcode = "1000100" --in
+		else '0';
+	-- Memory_Read_Enable operations
+	Memory_Read_Enable <= "00" when opcode = "0000000" -- nop
+		else "00" when opcode = "0111000" -- And
+		else "00" when opcode = "0101010" -- inc
+		else "01" when opcode = "1001000" --ldd
+		else "00" when opcode = "1011001" -- std
+		else "11" when opcode = "1000100" --in
+		else "00";
+	-- Memory_Write_Enable operations
+	Memory_Write_Enable <= "00" when opcode = "0000000" -- nop
+		else "00" when opcode = "0111000" -- And
+		else "00" when opcode = "0101010" -- inc
+		else "00" when opcode = "1001000" --ldd
+		else "01" when opcode = "1011001" -- std
+		else "00" when opcode = "1000100" --in
+		else "00";
+		
+	
+
+	--	WITH OPCode SELECT ALU_operation <= "0111" WHEN "100", "1000" WHEN "000", "0000" WHEN "010", "0000" WHEN OTHERS;	
+	--	WITH OPCode SELECT write_enable <= '1' WHEN "100", '1' WHEN "000", '0' WHEN "010", '0' WHEN OTHERS;
+END structure;
+

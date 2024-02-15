@@ -1,0 +1,68 @@
+LIBRARY IEEE;
+LIBRARY BASICLOGIC;
+USE IEEE.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+USE IEEE.math_real.all;
+
+USE BASICLOGIC.custom_types.all;
+USE BASICLOGIC.all;
+
+ENTITY Pipeline IS
+	GENERIC(
+	w_InstAdr : natural := 6;
+	w_Inst : natural := 16;
+	w_OPCode : natural := 3;
+	w_RegAdr : natural := 3;
+	w_RegData : natural := 16);
+	PORT(
+	clk : IN std_logic;
+	rst : IN std_logic);
+END Pipeline;
+
+ARCHITECTURE structure OF Pipeline IS
+	SIGNAL Notclk : std_logic;
+	SIGNAL PC_in : std_logic_vector(w_InstAdr-1 DOWNTO 0);
+	SIGNAL PC_out : std_logic_vector(w_InstAdr-1 DOWNTO 0);
+	SIGNAL PC_cout : std_logic;
+	SIGNAL FDReg_inst_in : std_logic_vector(w_Inst-1 DOWNTO 0);
+	SIGNAL FDReg_inst_out : std_logic_vector(w_Inst-1 DOWNTO 0);
+	SIGNAL DEReg_DataA_in : std_logic_vector(w_RegData-1 DOWNTO 0);
+	SIGNAL DEReg_DataA_out : std_logic_vector(w_RegData-1 DOWNTO 0);
+	SIGNAL DEReg_DataB_in : std_logic_vector(w_RegData-1 DOWNTO 0);
+	SIGNAL DEReg_DataB_out : std_logic_vector(w_RegData-1 DOWNTO 0);
+	SIGNAL DEReg_WAdr_in : std_logic_vector(w_RegAdr-1 DOWNTO 0);
+	SIGNAL DEReg_WAdr_out : std_logic_vector(w_RegAdr-1 DOWNTO 0);
+	SIGNAL DEReg_CTRL_ALUOP_in : std_logic_vector(3 DOWNTO 0);
+	SIGNAL DEReg_CTRL_ALUOP_out : std_logic_vector(3 DOWNTO 0);
+	SIGNAL DEReg_CTRL_WE_in : std_logic_vector(0 DOWNTO 0);
+	SIGNAL DEReg_CTRL_WE_out : std_logic_vector(0 DOWNTO 0);
+	SIGNAL WBReg_Data_in : std_logic_vector(w_RegData-1 DOWNTO 0);
+	SIGNAL WBReg_Data_out : std_logic_vector(w_RegData-1 DOWNTO 0);
+	SIGNAL WBReg_WAdr_in : std_logic_vector(w_RegAdr-1 DOWNTO 0);
+	SIGNAL WBReg_WAdr_out : std_logic_vector(w_RegAdr-1 DOWNTO 0);
+	SIGNAL WBReg_CTRL_WE_in : std_logic_vector(0 DOWNTO 0);
+	SIGNAL WBReg_CTRL_WE_out : std_logic_vector(0 DOWNTO 0);
+	SIGNAL ALU_cin: std_logic;
+	SIGNAL ALU_cout: std_logic;
+BEGIN
+	Notclk <= not clk;
+	PC_in <= (0=>'1',OTHERS=>'0');
+	ALU_cin <= '0';
+	PC: ENTITY work.Counter(structure) GENERIC MAP(w => w_InstAdr,w_max => 4) PORT MAP(clk => clk,rst => rst,d => PC_in,q => PC_out,c => PC_cout);
+	InstCache: ENTITY work.RegFile(structure_a) GENERIC MAP(n_reg => 2**w_InstAdr,n_in => 1,n_out => 1,w => w_Inst) PORT MAP(clk => clk,rst => '0',we(0) => '0',inadr(0) => (OTHERS=>'0'),inport(0) => (OTHERS=>'0'),outadr(0) => PC_out, outport(0) => FDReg_inst_in);
+	FDReg_inst: ENTITY work.Reg(structure_b) GENERIC MAP(w => w_Inst) PORT MAP(clk => Notclk,rst => rst,d => FDReg_inst_in,q => FDReg_inst_out);
+	RegFile: ENTITY work.RegFile(structure_b) GENERIC MAP(n_reg => 2**w_RegAdr,n_in => 1,n_out => 2,w => w_RegData) PORT MAP(clk => clk,rst => rst,we(0) => WBReg_CTRL_WE_out(0),inadr(0) => WBReg_WAdr_out,inport(0) => WBReg_Data_out,outadr(0) => FDReg_inst_out(w_Inst-w_OPCode-1 DOWNTO w_Inst-w_OPCode-w_RegAdr),outadr(1) => FDReg_inst_out(w_Inst-w_OPCode-w_RegAdr-1 DOWNTO w_Inst-w_OPCode-2*w_RegAdr), outport(0) => DEReg_DataA_in,outport(1) => DEReg_DataB_in);
+	CTRLUnit: ENTITY work.ControlUnit(structure) PORT MAP(OPCode => FDReg_inst_out(w_Inst-1 DOWNTO w_Inst-w_OPCode),ALU_operation => DEReg_CTRL_ALUOP_in,write_enable => DEReg_CTRL_WE_in(0));
+	DEReg_WAdr_in <= FDReg_inst_out(w_Inst-w_OPCode-2*w_RegAdr-1 DOWNTO w_Inst-w_OPCode-3*w_RegAdr);
+	DEReg_DataA: ENTITY work.Reg(structure_b) GENERIC MAP(w => w_RegData) PORT MAP(clk => Notclk,rst => rst,d => DEReg_DataA_in,q => DEReg_DataA_out);
+	DEReg_DataB: ENTITY work.Reg(structure_b) GENERIC MAP(w => w_RegData) PORT MAP(clk => Notclk,rst => rst,d => DEReg_DataB_in,q => DEReg_DataB_out);
+	DEReg_WAdr: ENTITY work.Reg(structure_b) GENERIC MAP(w => w_RegAdr) PORT MAP(clk => Notclk,rst => rst,d => DEReg_WAdr_in,q => DEReg_WAdr_out);
+	DEReg_CTRL_ALU: ENTITY work.Reg(structure_b) GENERIC MAP(w => 4) PORT MAP(clk => Notclk,rst => rst,d => DEReg_CTRL_ALUOP_in,q => DEReg_CTRL_ALUOP_out);
+	DEReg_CTRL_WE: ENTITY work.Reg(structure_b) GENERIC MAP(w => 1) PORT MAP(clk => Notclk,rst => rst,d => DEReg_CTRL_WE_in,q => DEReg_CTRL_WE_out);
+	ALU: ENTITY work.ALU(structure) GENERIC MAP(w => w_RegData,w_max => 4) PORT MAP(a => DEReg_DataA_out,b => DEReg_DataB_out,cin => ALU_cin, s => DEReg_CTRL_ALUOP_out,f => WBReg_Data_in, cout => ALU_cout);
+	WBReg_WAdr_in <= DEReg_WAdr_out;
+	WBReg_CTRL_WE_in <= DEReg_CTRL_WE_out;
+	WBReg_Data: ENTITY work.Reg(structure_b) GENERIC MAP(w => w_RegData) PORT MAP(clk => Notclk,rst => rst,d => WBReg_Data_in,q => WBReg_Data_out);
+	WBReg_WAdr: ENTITY work.Reg(structure_b) GENERIC MAP(w => w_RegAdr) PORT MAP(clk => Notclk,rst => rst,d => WBReg_WAdr_in,q => WBReg_WAdr_out);
+	WBReg_CTRL_WE: ENTITY work.Reg(structure_b) GENERIC MAP(w => 1) PORT MAP(clk => Notclk,rst => rst,d => WBReg_CTRL_WE_in,q => WBReg_CTRL_WE_out);
+END structure;

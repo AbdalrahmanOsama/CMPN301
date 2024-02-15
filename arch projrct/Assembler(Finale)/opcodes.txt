@@ -1,0 +1,81 @@
+zero operands
+NOP	00-00-000
+SETC	00-00-010
+CLRC	00-00-011
+RET	11-00-001
+RTI	11-00-011
+
+one operand
+opcode	Rsrc1
+OUT	10-01-101
+PUSH	10-01-011
+
+opcode	Rdst
+IN	10-00-100
+POP	10-00-010
+JZ	11-00-111
+JC	11-00-110
+JMP	11-00-100
+CALL	11-00-000
+
+two operands
+opcode	Rdst	Rsrc1
+NOT	01-01-000
+INC	01-01-010
+DEC	01-01-011
+MOV	01-01-100
+LDD	10-01-000
+
+opcode	Rdst	Imm
+LDM	01-10-100
+
+opcode	Rsrc2	Rsrc1
+STD	10-11-001
+
+three operands
+opcode	Rdst	Rsrc1	Rsrc2
+ADD	01-11-010
+SUB	01-11-011
+AND	01-11-000
+OR	01-11-001
+
+opcode	Rdst	Rsrc1	Imm
+IADD	01-10-010
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+NOP ,d5
+nop
+add ,R8 ,R4, R3	#test1
+SUB ,R0 ,R2, R7	#test2
+trash

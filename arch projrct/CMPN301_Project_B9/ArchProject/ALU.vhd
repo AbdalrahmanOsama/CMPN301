@@ -1,0 +1,95 @@
+LIBRARY IEEE;
+LIBRARY BASICLOGIC;
+USE IEEE.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+USE IEEE.math_real.all;
+
+USE BASICLOGIC.custom_types.all;
+USE BASICLOGIC.all;
+
+ENTITY ALU IS
+	GENERIC(
+	w : natural := 16;
+	w_max : natural := 4);
+	PORT(
+	a : IN std_logic_vector(w-1 DOWNTO 0);
+	b : IN std_logic_vector(w-1 DOWNTO 0);
+	cin : IN std_logic;
+	s : IN std_logic_vector(3 DOWNTO 0);
+	f : OUT std_logic_vector(w-1 DOWNTO 0);
+	flags : OUT std_logic_vector(2 DOWNTO 0));
+END ALU;
+
+ARCHITECTURE structure OF ALU IS
+	SIGNAL Pass_a : std_logic_vector(0 DOWNTO 0);
+	SIGNAL Pass_b : std_logic_vector(0 DOWNTO 0);
+	SIGNAL Adder_op1 : std_logic_vector(w-1 DOWNTO 0);
+	SIGNAL Adder_op2 : std_logic_vector(w-1 DOWNTO 0);
+	SIGNAL Adder_ops : array_of_std_logic_vector(3 DOWNTO 0) (w-1 DOWNTO 0);
+	SIGNAL fA_i : array_of_std_logic_vector(3 DOWNTO 0) (w-1 DOWNTO 0);
+	SIGNAL cA_i : array_of_std_logic_vector(3 DOWNTO 0) (0 DOWNTO 0);
+	SIGNAL fB_i : array_of_std_logic_vector(3 DOWNTO 0) (w-1 DOWNTO 0);
+	SIGNAL cB_i : array_of_std_logic_vector(3 DOWNTO 0) (0 DOWNTO 0);
+	SIGNAL fC_i : array_of_std_logic_vector(3 DOWNTO 0) (w-1 DOWNTO 0);
+	SIGNAL cC_i : array_of_std_logic_vector(3 DOWNTO 0) (0 DOWNTO 0);
+	SIGNAL fD_i : array_of_std_logic_vector(3 DOWNTO 0) (w-1 DOWNTO 0);
+	SIGNAL cD_i : array_of_std_logic_vector(3 DOWNTO 0) (0 DOWNTO 0);
+	SIGNAL f_i : array_of_std_logic_vector(3 DOWNTO 0) (w-1 DOWNTO 0);
+	SIGNAL c_i : array_of_std_logic_vector(3 DOWNTO 0) (0 DOWNTO 0);
+	SIGNAL func : std_logic_vector(w-1 DOWNTO 0);
+	SIGNAL cout : std_logic;
+BEGIN
+	Pass_a(0) <= NOT (s(0) or s(1) or cin);
+	Pass_b(0) <= (s(0) and s(1) and cin);
+	Adder_op1 <= a;
+	Adder_ops(0) <= (OTHERS=>'0');
+	Adder_ops(1) <= b;
+	Adder_ops(2) <= NOT Adder_ops(1);
+	Adder_ops(3) <= NOT Adder_ops(0);
+	u_mux_op2: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => w) PORT MAP(x => Adder_ops,s => s(1 DOWNTO 0),f => Adder_op2);
+	u_Adder: ENTITY work.CSAdder(structure) GENERIC MAP(w => w,w_max => w_max) PORT MAP(a => Adder_op1,b => Adder_op2,cin => cin,s => fA_i(0),cout => cA_i(0)(0));
+	fA_i(1) <= a;
+	cA_i(1)(0) <= '0';
+	fA_i(2) <= b;
+	cA_i(2)(0) <= '0';
+	fA_i(3) <= (OTHERS=>'0');
+	cA_i(3)(0) <= '0';
+	u_mux_fA: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => w) PORT MAP(x => fA_i,s => (Pass_b & Pass_a),f => f_i(0));
+	u_mux_cA: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => 1) PORT MAP(x => cA_i,s => (Pass_b & Pass_a),f => c_i(0));
+	fB_i(0) <= a or b;
+	cB_i(0)(0) <= '0';
+	fB_i(1) <= a and b;
+	cB_i(1)(0) <= '0';
+	fB_i(2) <= a nor b;
+	cB_i(2)(0) <= '0';
+	fB_i(3) <= not a;
+	cB_i(3)(0) <= '0';
+	u_mux_fB: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => w) PORT MAP(x => fB_i,s => s(1 DOWNTO 0),f => f_i(1));
+	u_mux_cB: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => 1) PORT MAP(x => cB_i,s => s(1 DOWNTO 0),f => c_i(1));
+	fC_i(0) <= a(w-2 DOWNTO 0) & '0';
+	cC_i(0)(0) <= a(w-1);
+	fC_i(1) <= a(w-2 DOWNTO 0) & a(w-1);
+	cC_i(1)(0) <= a(w-1);
+	fC_i(2) <= a(w-2 DOWNTO 0) & cin;
+	cC_i(2)(0) <= a(w-1);
+	fC_i(3) <= (OTHERS=>'0');
+	cC_i(3)(0) <= '0';
+	u_mux_fC: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => w) PORT MAP(x => fC_i,s => s(1 DOWNTO 0),f => f_i(2));
+	u_mux_cC: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => 1) PORT MAP(x => cC_i,s => s(1 DOWNTO 0),f => c_i(2));
+	fD_i(0) <= '0' & a(w-1 DOWNTO 1);
+	cD_i(0)(0) <= a(0);
+	fD_i(1) <= a(0) & a(w-1 DOWNTO 1);
+	cD_i(1)(0) <= a(0);
+	fD_i(2) <= cin & a(w-1 DOWNTO 1);
+	cD_i(2)(0) <= a(0);
+	fD_i(3) <= a(w-1) & a(w-1 DOWNTO 1);
+	cD_i(3)(0) <= '0';
+	u_mux_fD: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => w) PORT MAP(x => fD_i,s => s(1 DOWNTO 0),f => f_i(3));
+	u_mux_cD: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => 1) PORT MAP(x => cD_i,s => s(1 DOWNTO 0),f => c_i(3));
+	u_mux_f: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => w) PORT MAP(x => f_i,s => s(3 DOWNTO 2),f => func);
+	u_mux_c: ENTITY BASICLOGIC.Muxer(structure) GENERIC MAP(n => 4,w => 1) PORT MAP(x => c_i,s => s(3 DOWNTO 2),f(0) => cout);
+	f <= func;
+	flags(2) <= cout;
+	flags(1) <= func(w-1);
+	flags(0) <= '1' WHEN (to_integer(unsigned(func)) = 0) ELSE '0';
+END structure;

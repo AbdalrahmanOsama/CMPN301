@@ -1,0 +1,8 @@
+// memory data file (do not edit the following line - required for mem load use)
+// instance=/pipeline/Fetch/InstCache/ram
+// format=mti addressradix=d dataradix=b version=1.0 wordsperline=1
+   0: UUUUUUUUUUUUUUUU
+   1: 0000000000000000
+   2: UUUUUUUUUUUUUUUU
+   3: UUUUUUUUUUUUUUUU
+   4: UUUUUUUUUUUUUUUU
