@@ -1,0 +1,30 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlib BASICLOGIC
+vmap BASICLOGIC BASICLOGIC
+vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/custom_types.vhd}
+vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Muxer.vhd}
+vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Demuxer.vhd}
+vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Encoder.vhd}
+vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Decoder.vhd}
+vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/FAdder.vhd}
+vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/D_FF.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/RCAdder.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/CSAdder.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Reg.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Counter.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/RegFile.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/ALU.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/ControlUnit.vhd}
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Pipeline.vhd}
+
+vcom -2008 -work work {C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Pipeline_TB.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L BASICLOGIC -voptargs="+acc"  Pipeline_TB
+
+do C:/Users/elpri/Desktop/Arch/Labs/Pipeline/Pipeline_TB.do

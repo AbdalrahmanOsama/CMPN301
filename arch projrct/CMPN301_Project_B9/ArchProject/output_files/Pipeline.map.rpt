@@ -1,0 +1,2102 @@
+Analysis & Elaboration report for Pipeline
+Thu Apr 20 20:35:17 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC
+  5. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder
+  6. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0
+  7. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA1
+  8. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_smux
+  9. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_cmux
+ 10. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA0
+ 11. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA1
+ 12. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_smux
+ 13. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_cmux
+ 14. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA0
+ 15. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA1
+ 16. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_smux
+ 17. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_cmux
+ 18. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:3:first:u_RCA
+ 19. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|Muxer:u_mux
+ 20. Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|Reg:u_Reg
+ 21. Parameter Settings for User Entity Instance: FStage:Fetch|RegFile:InstCache
+ 22. Parameter Settings for User Entity Instance: FStage:Fetch|Muxer:mux_rst
+ 23. Parameter Settings for User Entity Instance: DStage:Decode|Reg:FDReg_Instruction
+ 24. Parameter Settings for User Entity Instance: DStage:Decode|Reg:FDReg_InPortData
+ 25. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile
+ 26. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Decoder:\loop_inx:0:u_dec
+ 27. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:0:u_enc
+ 28. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_din_mux
+ 29. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_we_mux
+ 30. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:0:u_reg
+ 31. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:1:u_enc
+ 32. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_din_mux
+ 33. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_we_mux
+ 34. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:1:u_reg
+ 35. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:2:u_enc
+ 36. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_din_mux
+ 37. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_we_mux
+ 38. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:2:u_reg
+ 39. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:3:u_enc
+ 40. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_din_mux
+ 41. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_we_mux
+ 42. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:3:u_reg
+ 43. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:4:u_enc
+ 44. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_din_mux
+ 45. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_we_mux
+ 46. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:4:u_reg
+ 47. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:5:u_enc
+ 48. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_din_mux
+ 49. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_we_mux
+ 50. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:5:u_reg
+ 51. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:6:u_enc
+ 52. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_din_mux
+ 53. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_we_mux
+ 54. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:6:u_reg
+ 55. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:7:u_enc
+ 56. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_din_mux
+ 57. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_we_mux
+ 58. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:7:u_reg
+ 59. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_out:0:u_dout_mux
+ 60. Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_out:1:u_dout_mux
+ 61. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_ALUFlagEnable
+ 62. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_ALUOperation
+ 63. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_ImmediateValue
+ 64. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_WriteBackEnable
+ 65. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_MemoryReadEnable
+ 66. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_MemoryWriteEnable
+ 67. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_Data1
+ 68. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_Data2
+ 69. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_DestAdr
+ 70. Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_InPortData
+ 71. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU
+ 72. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_op2
+ 73. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder
+ 74. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0
+ 75. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA1
+ 76. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_smux
+ 77. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_cmux
+ 78. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA0
+ 79. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA1
+ 80. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_smux
+ 81. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_cmux
+ 82. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA0
+ 83. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA1
+ 84. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_smux
+ 85. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_cmux
+ 86. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:3:first:u_RCA
+ 87. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fA
+ 88. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cA
+ 89. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fB
+ 90. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cB
+ 91. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fC
+ 92. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cC
+ 93. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fD
+ 94. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cD
+ 95. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_f
+ 96. Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_c
+ 97. Parameter Settings for User Entity Instance: EStage:Execute|Reg:FlagRegister
+ 98. Parameter Settings for User Entity Instance: EStage:Execute|Muxer:Flagmux
+ 99. Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_WriteBackEnable
+100. Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_MemoryReadEnable
+101. Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_MemoryWriteEnable
+102. Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_Data1
+103. Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_Data2
+104. Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_DestAdr
+105. Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_InPortData
+106. Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_WriteBackEnable
+107. Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_MemoryReadEnable
+108. Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_Data1
+109. Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_DestAdr
+110. Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_InPortData
+111. Parameter Settings for User Entity Instance: MStage:Memory|Reg:OutPortRegister
+112. Parameter Settings for User Entity Instance: MStage:Memory|Muxer:OutPortmux
+113. Parameter Settings for User Entity Instance: MStage:Memory|RegFile:DataMemory
+114. Parameter Settings for User Entity Instance: MStage:Memory|Muxer:Datamux
+115. Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_WriteBackEnable
+116. Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_WriteData
+117. Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_DestAdr
+118. Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_OutPortData
+119. Analysis & Elaboration Settings
+120. Port Connectivity Checks: "MStage:Memory|Reg:EMReg_Data2"
+121. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cD"
+122. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_fD"
+123. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cC"
+124. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_fC"
+125. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cB"
+126. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cA"
+127. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_fA"
+128. Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_op2"
+129. Port Connectivity Checks: "EStage:Execute|Reg:DEReg_ImmediateValue"
+130. Port Connectivity Checks: "EStage:Execute"
+131. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_we_mux"
+132. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_din_mux"
+133. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:7:u_enc"
+134. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_we_mux"
+135. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_din_mux"
+136. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:6:u_enc"
+137. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_we_mux"
+138. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_din_mux"
+139. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:5:u_enc"
+140. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_we_mux"
+141. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_din_mux"
+142. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:4:u_enc"
+143. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_we_mux"
+144. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_din_mux"
+145. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:3:u_enc"
+146. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_we_mux"
+147. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_din_mux"
+148. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:2:u_enc"
+149. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_we_mux"
+150. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_din_mux"
+151. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:1:u_enc"
+152. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_we_mux"
+153. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_din_mux"
+154. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:0:u_enc"
+155. Port Connectivity Checks: "DStage:Decode|RegFile:RegFile"
+156. Port Connectivity Checks: "DStage:Decode|Reg:FDReg_Instruction"
+157. Port Connectivity Checks: "FStage:Fetch|Muxer:mux_rst"
+158. Port Connectivity Checks: "FStage:Fetch|RegFile:InstCache"
+159. Port Connectivity Checks: "FStage:Fetch|Counter:PC|Reg:u_Reg"
+160. Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA1"
+161. Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA0"
+162. Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA1"
+163. Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA0"
+164. Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA1"
+165. Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0"
+166. Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder"
+167. Port Connectivity Checks: "FStage:Fetch|Counter:PC"
+168. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Thu Apr 20 20:35:17 2023       ;
+; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                 ; Pipeline                                    ;
+; Top-level Entity Name         ; Pipeline                                    ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; w              ; 16    ; Signed Integer                              ;
+; w_max          ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                              ;
+; w_max          ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA1 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_smux ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                             ;
+; w              ; 4     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_cmux ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                             ;
+; w              ; 1     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA0 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA1 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_smux ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                             ;
+; w              ; 4     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_cmux ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                             ;
+; w              ; 1     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA0 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA1 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_smux ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                             ;
+; w              ; 4     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_cmux ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                             ;
+; w              ; 1     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:3:first:u_RCA ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|Muxer:u_mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                          ;
+; w              ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Counter:PC|Reg:u_Reg ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|RegFile:InstCache ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n_reg          ; 1024  ; Signed Integer                                     ;
+; n_in           ; 1     ; Signed Integer                                     ;
+; n_out          ; 1     ; Signed Integer                                     ;
+; w              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FStage:Fetch|Muxer:mux_rst ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 2     ; Signed Integer                                 ;
+; w              ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|Reg:FDReg_Instruction ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; w              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|Reg:FDReg_InPortData ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n_reg          ; 8     ; Signed Integer                                    ;
+; n_in           ; 1     ; Signed Integer                                    ;
+; n_out          ; 2     ; Signed Integer                                    ;
+; w              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Decoder:\loop_inx:0:u_dec ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:0:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:0:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:1:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:1:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:2:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:2:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:3:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:3:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:4:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:4:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:5:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:5:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:6:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:6:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:7:u_enc ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_din_mux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                                ;
+; w              ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_we_mux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 1     ; Signed Integer                                                               ;
+; w              ; 1     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Reg:\loop_reg:7:u_reg ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_out:0:u_dout_mux ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                 ;
+; w              ; 16    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DStage:Decode|RegFile:RegFile|Muxer:\loop_out:1:u_dout_mux ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                 ;
+; w              ; 16    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_ALUFlagEnable ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 1     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_ALUOperation ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; w              ; 5     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_ImmediateValue ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; w              ; 1     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_WriteBackEnable ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; w              ; 1     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_MemoryReadEnable ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w              ; 2     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_MemoryWriteEnable ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 2     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_Data1 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; w              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_Data2 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; w              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_DestAdr ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:DEReg_InPortData ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; w              ; 16    ; Signed Integer                             ;
+; w_max          ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_op2 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                             ;
+; w              ; 16    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                             ;
+; w_max          ; 4     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0 ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA1 ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_smux ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                            ;
+; w              ; 4     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_cmux ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                            ;
+; w              ; 1     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA0 ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA1 ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_smux ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                            ;
+; w              ; 4     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:1:other:u_cmux ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                            ;
+; w              ; 1     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA0 ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA1 ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_smux ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                            ;
+; w              ; 4     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|Muxer:\loop_add:2:other:u_cmux ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                                            ;
+; w              ; 1     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|CSAdder:u_Adder|RCAdder:\loop_add:3:first:u_RCA ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fA ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cA ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 1     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fB ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cB ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 1     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fC ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cC ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 1     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_fD ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_cD ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
+; w              ; 1     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_f ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                           ;
+; w              ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|ALU:ALU|Muxer:u_mux_c ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                           ;
+; w              ; 1     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Reg:FlagRegister ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; w              ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EStage:Execute|Muxer:Flagmux ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 2     ; Signed Integer                                   ;
+; w              ; 3     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_WriteBackEnable ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; w              ; 1     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_MemoryReadEnable ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; w              ; 2     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_MemoryWriteEnable ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w              ; 2     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_Data1 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; w              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_Data2 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; w              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_DestAdr ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; w              ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:EMReg_InPortData ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_WriteBackEnable ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; w              ; 1     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_MemoryReadEnable ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; w              ; 2     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_Data1 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; w              ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_DestAdr ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; w              ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:MMReg_InPortData ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Reg:OutPortRegister ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Muxer:OutPortmux ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 2     ; Signed Integer                                     ;
+; w              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|RegFile:DataMemory ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n_reg          ; 1024  ; Signed Integer                                       ;
+; n_in           ; 1     ; Signed Integer                                       ;
+; n_out          ; 1     ; Signed Integer                                       ;
+; w              ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MStage:Memory|Muxer:Datamux ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 4     ; Signed Integer                                  ;
+; w              ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_WriteBackEnable ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; w              ; 1     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_WriteData ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_DestAdr ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WBStage:WriteBack|Reg:MWBReg_OutPortData ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; w              ; 16    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; Pipeline           ; Pipeline           ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
+; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Maximum processors allowed for parallel compilation                             ; All                ; All                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MStage:Memory|Reg:EMReg_Data2"                                                           ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; q[15..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cD" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; x[3] ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_fD" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; x[0][15] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cC" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; x[3] ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_fC" ;
++---------+-------+----------+--------------------------------------+
+; Port    ; Type  ; Severity ; Details                              ;
++---------+-------+----------+--------------------------------------+
+; x[3]    ; Input ; Info     ; Stuck at GND                         ;
+; x[0][0] ; Input ; Info     ; Stuck at GND                         ;
++---------+-------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cB" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; x    ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_cA" ;
++---------+-------+----------+--------------------------------------+
+; Port    ; Type  ; Severity ; Details                              ;
++---------+-------+----------+--------------------------------------+
+; x[3..1] ; Input ; Info     ; Stuck at GND                         ;
++---------+-------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_fA" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; x[3] ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|ALU:ALU|Muxer:u_mux_op2" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; x[3] ; Input ; Info     ; Stuck at VCC                             ;
+; x[0] ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute|Reg:DEReg_ImmediateValue"                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EStage:Execute"                                                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; flags ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:7:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:7:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:6:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:6:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:5:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:5:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:4:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:4:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:3:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:3:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:2:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:2:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:1:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:1:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_we_mux"    ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_din_mux"   ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; s    ; Input ; Info     ; Connecting port with null range to expression with null range ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:0:u_enc"      ;
++------+--------+----------+---------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                       ;
++------+--------+----------+---------------------------------------------------------------+
+; f    ; Output ; Info     ; Connecting port with null range to expression with null range ;
++------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|RegFile:RegFile" ;
++-------+-------+----------+--------------------------------+
+; Port  ; Type  ; Severity ; Details                        ;
++-------+-------+----------+--------------------------------+
+; start ; Input ; Info     ; Stuck at VCC                   ;
++-------+-------+----------+--------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DStage:Decode|Reg:FDReg_Instruction"                                                    ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; q[15..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Muxer:mux_rst"                                                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; x[1]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; f[15..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|RegFile:InstCache" ;
++--------+-------+----------+--------------------------------+
+; Port   ; Type  ; Severity ; Details                        ;
++--------+-------+----------+--------------------------------+
+; rst    ; Input ; Info     ; Stuck at GND                   ;
+; start  ; Input ; Info     ; Stuck at VCC                   ;
+; we     ; Input ; Info     ; Stuck at GND                   ;
+; inadr  ; Input ; Info     ; Stuck at GND                   ;
+; inport ; Input ; Info     ; Stuck at GND                   ;
++--------+-------+----------+--------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|Reg:u_Reg" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                        ;
++------+-------+----------+-------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA1" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:2:other:u_RCA0" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA1" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:1:other:u_RCA0" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA1" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC|CSAdder:u_Adder" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                              ;
++------+-------+----------+-------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FStage:Fetch|Counter:PC"                                                                  ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; we         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; inc[15..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; inc[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; c          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Apr 20 20:35:04 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pipeline -c Pipeline --analysis_and_elaboration
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 0 entities, in source file custom_types.vhd
+    Info (12022): Found design unit 1: custom_types (basiclogic) File: C:/Users/elpri/Desktop/ArchProject/custom_types.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file muxer.vhd
+    Info (12022): Found design unit 1: Muxer-structure File: C:/Users/elpri/Desktop/ArchProject/Muxer.vhd Line: 19
+    Info (12023): Found entity 1: Muxer File: C:/Users/elpri/Desktop/ArchProject/Muxer.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file demuxer.vhd
+    Info (12022): Found design unit 1: Demuxer-structure File: C:/Users/elpri/Desktop/ArchProject/Demuxer.vhd Line: 19
+    Info (12023): Found entity 1: Demuxer File: C:/Users/elpri/Desktop/ArchProject/Demuxer.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file encoder.vhd
+    Info (12022): Found design unit 1: Encoder-structure File: C:/Users/elpri/Desktop/ArchProject/Encoder.vhd Line: 18
+    Info (12023): Found entity 1: Encoder File: C:/Users/elpri/Desktop/ArchProject/Encoder.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: Decoder-structure File: C:/Users/elpri/Desktop/ArchProject/Decoder.vhd Line: 17
+    Info (12023): Found entity 1: Decoder File: C:/Users/elpri/Desktop/ArchProject/Decoder.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file fadder.vhd
+    Info (12022): Found design unit 1: FAdder-structure File: C:/Users/elpri/Desktop/ArchProject/FAdder.vhd Line: 18
+    Info (12023): Found entity 1: FAdder File: C:/Users/elpri/Desktop/ArchProject/FAdder.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file rcadder.vhd
+    Info (12022): Found design unit 1: RCAdder-structure File: C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd Line: 21
+    Info (12023): Found entity 1: RCAdder File: C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file csadder.vhd
+    Info (12022): Found design unit 1: CSAdder-structure File: C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd Line: 22
+    Info (12023): Found entity 1: CSAdder File: C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file d_ff.vhd
+    Info (12022): Found design unit 1: D_FF-structure File: C:/Users/elpri/Desktop/ArchProject/D_FF.vhd Line: 17
+    Info (12023): Found entity 1: D_FF File: C:/Users/elpri/Desktop/ArchProject/D_FF.vhd Line: 9
+Info (12021): Found 3 design units, including 1 entities, in source file reg.vhd
+    Info (12022): Found design unit 1: Reg-structure_a File: C:/Users/elpri/Desktop/ArchProject/Reg.vhd Line: 20
+    Info (12022): Found design unit 2: Reg-structure_b File: C:/Users/elpri/Desktop/ArchProject/Reg.vhd Line: 32
+    Info (12023): Found entity 1: Reg File: C:/Users/elpri/Desktop/ArchProject/Reg.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: Counter-structure File: C:/Users/elpri/Desktop/ArchProject/Counter.vhd Line: 24
+    Info (12023): Found entity 1: Counter File: C:/Users/elpri/Desktop/ArchProject/Counter.vhd Line: 10
+Info (12021): Found 4 design units, including 1 entities, in source file regfile.vhd
+    Info (12022): Found design unit 1: RegFile-structure_a File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 27
+    Info (12022): Found design unit 2: RegFile-structure_b File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 66
+    Info (12022): Found design unit 3: RegFile-structure_c File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 119
+    Info (12023): Found entity 1: RegFile File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-structure File: C:/Users/elpri/Desktop/ArchProject/ALU.vhd Line: 23
+    Info (12023): Found entity 1: ALU File: C:/Users/elpri/Desktop/ArchProject/ALU.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file controlunit.vhd
+    Info (12022): Found design unit 1: ControlUnit-structure File: C:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd Line: 22
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file fstage.vhd
+    Info (12022): Found design unit 1: FStage-structure File: C:/Users/elpri/Desktop/ArchProject/FStage.vhd Line: 20
+    Info (12023): Found entity 1: FStage File: C:/Users/elpri/Desktop/ArchProject/FStage.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file dstage.vhd
+    Info (12022): Found design unit 1: DStage-structure File: C:/Users/elpri/Desktop/ArchProject/DStage.vhd Line: 31
+    Info (12023): Found entity 1: DStage File: C:/Users/elpri/Desktop/ArchProject/DStage.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file estage.vhd
+    Info (12022): Found design unit 1: EStage-structure File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 34
+    Info (12023): Found entity 1: EStage File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file mstage.vhd
+    Info (12022): Found design unit 1: MStage-structure File: C:/Users/elpri/Desktop/ArchProject/MStage.vhd Line: 27
+    Info (12023): Found entity 1: MStage File: C:/Users/elpri/Desktop/ArchProject/MStage.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file wbstage.vhd
+    Info (12022): Found design unit 1: WBStage-structure File: C:/Users/elpri/Desktop/ArchProject/WBStage.vhd Line: 24
+    Info (12023): Found entity 1: WBStage File: C:/Users/elpri/Desktop/ArchProject/WBStage.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline.vhd
+    Info (12022): Found design unit 1: Pipeline-structure File: C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd Line: 19
+    Info (12023): Found entity 1: Pipeline File: C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline_tb.vhd
+    Info (12022): Found design unit 1: Pipeline_TB-structure File: C:/Users/elpri/Desktop/ArchProject/Pipeline_TB.vhd Line: 16
+    Info (12023): Found entity 1: Pipeline_TB File: C:/Users/elpri/Desktop/ArchProject/Pipeline_TB.vhd Line: 13
+Info (12127): Elaborating entity "Pipeline" for the top level hierarchy
+Info (12129): Elaborating entity "FStage" using architecture "A:structure" for hierarchy "FStage:Fetch" File: C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd Line: 48
+Warning (10036): Verilog HDL or VHDL warning at FStage.vhd(21): object "Notclk" assigned a value but never read File: C:/Users/elpri/Desktop/ArchProject/FStage.vhd Line: 21
+Info (12129): Elaborating entity "Counter" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC" File: C:/Users/elpri/Desktop/ArchProject/FStage.vhd Line: 28
+Info (12129): Elaborating entity "CSAdder" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC|CSAdder:u_Adder" File: C:/Users/elpri/Desktop/ArchProject/Counter.vhd Line: 30
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "s_i" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "c_i" into its bus
+Info (12129): Elaborating entity "RCAdder" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0" File: C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd Line: 32
+Info (12129): Elaborating entity "FAdder" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC|CSAdder:u_Adder|RCAdder:\loop_add:0:other:u_RCA0|FAdder:\loop_add:0:u_adder" File: C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd Line: 26
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_smux" File: C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd Line: 34
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC|CSAdder:u_Adder|Muxer:\loop_add:0:other:u_cmux" File: C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd Line: 35
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC|Muxer:u_mux" File: C:/Users/elpri/Desktop/ArchProject/Counter.vhd Line: 31
+Info (12129): Elaborating entity "Reg" using architecture "A:structure_b" for hierarchy "FStage:Fetch|Counter:PC|Reg:u_Reg" File: C:/Users/elpri/Desktop/ArchProject/Counter.vhd Line: 32
+Info (12129): Elaborating entity "D_FF" using architecture "A:structure" for hierarchy "FStage:Fetch|Counter:PC|Reg:u_Reg|D_FF:\loop_ff:0:u_ff" File: C:/Users/elpri/Desktop/ArchProject/Reg.vhd Line: 35
+Info (12129): Elaborating entity "RegFile" using architecture "A:structure_a" for hierarchy "FStage:Fetch|RegFile:InstCache" File: C:/Users/elpri/Desktop/ArchProject/FStage.vhd Line: 29
+Info (12129): Elaborating entity "DStage" using architecture "A:structure" for hierarchy "DStage:Decode" File: C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd Line: 49
+Info (12129): Elaborating entity "Reg" using architecture "A:structure_b" for hierarchy "DStage:Decode|Reg:FDReg_Instruction" File: C:/Users/elpri/Desktop/ArchProject/DStage.vhd Line: 42
+Info (12129): Elaborating entity "RegFile" using architecture "A:structure_c" for hierarchy "DStage:Decode|RegFile:RegFile" File: C:/Users/elpri/Desktop/ArchProject/DStage.vhd Line: 45
+Warning (10445): VHDL Subtype or Type Declaration warning at RegFile.vhd(125): subtype or type has null range File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 125
+Warning (10445): VHDL Subtype or Type Declaration warning at Encoder.vhd(14): subtype or type has null range File: C:/Users/elpri/Desktop/ArchProject/Encoder.vhd Line: 14
+Warning (10296): VHDL warning at RegFile.vhd(138): ignored assignment of value to null range File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 138
+Warning (10445): VHDL Subtype or Type Declaration warning at Muxer.vhd(15): subtype or type has null range File: C:/Users/elpri/Desktop/ArchProject/Muxer.vhd Line: 15
+Warning (10296): VHDL warning at RegFile.vhd(139): ignored assignment of value to null range File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 139
+Warning (10296): VHDL warning at RegFile.vhd(140): ignored assignment of value to null range File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 140
+Info (12129): Elaborating entity "Decoder" using architecture "A:structure" for hierarchy "DStage:Decode|RegFile:RegFile|Decoder:\loop_inx:0:u_dec" File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 131
+Info (12129): Elaborating entity "Encoder" using architecture "A:structure" for hierarchy "DStage:Decode|RegFile:RegFile|Encoder:\loop_reg:0:u_enc" File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 138
+Warning (10445): VHDL Subtype or Type Declaration warning at Encoder.vhd(14): subtype or type has null range File: C:/Users/elpri/Desktop/ArchProject/Encoder.vhd Line: 14
+Warning (10296): VHDL warning at Encoder.vhd(22): ignored assignment of value to null range File: C:/Users/elpri/Desktop/ArchProject/Encoder.vhd Line: 22
+Warning (10296): VHDL warning at Encoder.vhd(26): ignored assignment of value to null range File: C:/Users/elpri/Desktop/ArchProject/Encoder.vhd Line: 26
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_din_mux" File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 139
+Warning (10445): VHDL Subtype or Type Declaration warning at Muxer.vhd(15): subtype or type has null range File: C:/Users/elpri/Desktop/ArchProject/Muxer.vhd Line: 15
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "DStage:Decode|RegFile:RegFile|Muxer:\loop_reg:0:u_we_mux" File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 140
+Warning (10445): VHDL Subtype or Type Declaration warning at Muxer.vhd(15): subtype or type has null range File: C:/Users/elpri/Desktop/ArchProject/Muxer.vhd Line: 15
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "DStage:Decode|RegFile:RegFile|Muxer:\loop_out:0:u_dout_mux" File: C:/Users/elpri/Desktop/ArchProject/RegFile.vhd Line: 145
+Info (12129): Elaborating entity "ControlUnit" using architecture "A:structure" for hierarchy "DStage:Decode|ControlUnit:CTRLUnit" File: C:/Users/elpri/Desktop/ArchProject/DStage.vhd Line: 46
+Info (12129): Elaborating entity "EStage" using architecture "A:structure" for hierarchy "EStage:Execute" File: C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd Line: 50
+Warning (10036): Verilog HDL or VHDL warning at EStage.vhd(38): object "ImmediateValue" assigned a value but never read File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 38
+Info (12129): Elaborating entity "Reg" using architecture "A:structure_b" for hierarchy "EStage:Execute|Reg:DEReg_ALUFlagEnable" File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 51
+Info (12129): Elaborating entity "Reg" using architecture "A:structure_b" for hierarchy "EStage:Execute|Reg:DEReg_ALUOperation" File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 52
+Info (12129): Elaborating entity "Reg" using architecture "A:structure_b" for hierarchy "EStage:Execute|Reg:DEReg_MemoryReadEnable" File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 55
+Info (12129): Elaborating entity "Reg" using architecture "A:structure_b" for hierarchy "EStage:Execute|Reg:DEReg_DestAdr" File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 59
+Info (12129): Elaborating entity "ALU" using architecture "A:structure" for hierarchy "EStage:Execute|ALU:ALU" File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 62
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "EStage:Execute|ALU:ALU|Muxer:u_mux_op2" File: C:/Users/elpri/Desktop/ArchProject/ALU.vhd Line: 49
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "EStage:Execute|ALU:ALU|Muxer:u_mux_cA" File: C:/Users/elpri/Desktop/ArchProject/ALU.vhd Line: 58
+Info (12129): Elaborating entity "Muxer" using architecture "A:structure" for hierarchy "EStage:Execute|Muxer:Flagmux" File: C:/Users/elpri/Desktop/ArchProject/EStage.vhd Line: 64
+Info (12129): Elaborating entity "MStage" using architecture "A:structure" for hierarchy "MStage:Memory" File: C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd Line: 51
+Info (12129): Elaborating entity "RegFile" using architecture "A:structure_b" for hierarchy "MStage:Memory|RegFile:DataMemory" File: C:/Users/elpri/Desktop/ArchProject/MStage.vhd Line: 69
+Info (12129): Elaborating entity "WBStage" using architecture "A:structure" for hierarchy "WBStage:WriteBack" File: C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd Line: 52
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4944 megabytes
+    Info: Processing ended: Thu Apr 20 20:35:17 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:26
+
+

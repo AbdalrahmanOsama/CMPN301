@@ -1,0 +1,719 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/elpri/Desktop/ArchProject/simulation/modelsim
+Ealu
+Z1 w1681953368
+Z2 DPx10 basiclogic 12 custom_types 0 22 bTi@P8QG<jljEdQ^a9`811
+Z3 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+R0
+Z7 8C:/Users/elpri/Desktop/ArchProject/ALU.vhd
+Z8 FC:/Users/elpri/Desktop/ArchProject/ALU.vhd
+l0
+Z9 L10 1
+VPSDQ318^_c9USieZhzVX:2
+!s100 N9DUX^UP0HLOk=K9e35`G2
+Z10 OV;C;2020.1;71
+33
+Z11 !s110 1682015752
+!i10b 1
+Z12 !s108 1682015752.000000
+Z13 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/ALU.vhd|
+Z14 !s107 C:/Users/elpri/Desktop/ArchProject/ALU.vhd|
+!i113 1
+Z15 o-2008 -work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+Z17 DEx4 work 7 csadder 0 22 DITIc:R2@VKM9Vh@;0mZD1
+Z18 DEx10 basiclogic 5 muxer 0 22 UiUjc>f278OSkTV4P0mo`0
+R2
+R3
+R4
+R5
+R6
+Z19 DEx4 work 3 alu 0 22 PSDQ318^_c9USieZhzVX:2
+!i122 5
+l41
+L23 73
+V:C]^U2UCCbM]GY@1XVD@=3
+!s100 ?WJke=PcziUMbbklP>Y`:0
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Econtrolunit
+Z20 w1681993976
+R2
+R3
+R4
+R5
+R6
+!i122 6
+R0
+Z21 8C:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd
+Z22 FC:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd
+l0
+L11 1
+VR4g_Xb2N^Jb_RVi3MSJ<I3
+!s100 KZHM8b5zM:eJg>F2T0;WB1
+R10
+33
+R11
+!i10b 1
+R12
+Z23 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd|
+Z24 !s107 C:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd|
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+Z25 DEx4 work 11 controlunit 0 22 R4g_Xb2N^Jb_RVi3MSJ<I3
+!i122 6
+l26
+L22 49
+V^K:?E?9VUbA[lMM<`M<]O1
+!s100 `h?zkn>hB0L9AfA`BO`bf3
+R10
+33
+R11
+!i10b 1
+R12
+R23
+R24
+!i113 1
+R15
+R16
+Ecounter
+Z26 w1682003179
+R2
+R3
+R4
+R5
+R6
+!i122 3
+R0
+Z27 8C:/Users/elpri/Desktop/ArchProject/Counter.vhd
+Z28 FC:/Users/elpri/Desktop/ArchProject/Counter.vhd
+l0
+R9
+VI@UzPUI:f;Q>dI1Hj8]Pj3
+!s100 A6d?<gLYk>4XJ@>G`ge[e2
+R10
+33
+Z29 !s110 1682015751
+!i10b 1
+Z30 !s108 1682015751.000000
+Z31 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/Counter.vhd|
+Z32 !s107 C:/Users/elpri/Desktop/ArchProject/Counter.vhd|
+!i113 1
+R15
+R16
+Astructure
+Z33 DEx4 work 3 reg 0 22 QEL0bM=g=ZH^dHGB;9b[V1
+R18
+R17
+R2
+R3
+R4
+R5
+R6
+Z34 DEx4 work 7 counter 0 22 I@UzPUI:f;Q>dI1Hj8]Pj3
+!i122 3
+l29
+L24 12
+V`e<ODTbkC>Aj4_bOKYRo01
+!s100 oVP>onjBiOIDlf=h=_oUd1
+R10
+33
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R15
+R16
+Ecsadder
+Z35 w1680032936
+R2
+R3
+R4
+R5
+R6
+!i122 1
+R0
+Z36 8C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd
+Z37 FC:/Users/elpri/Desktop/ArchProject/CSAdder.vhd
+l0
+R9
+VDITIc:R2@VKM9Vh@;0mZD1
+!s100 kdWGPTVPVHFEI1HKe9@Xg0
+R10
+33
+R29
+!i10b 1
+R30
+Z38 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd|
+Z39 !s107 C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd|
+!i113 1
+R15
+R16
+Astructure
+R18
+Z40 DEx4 work 7 rcadder 0 22 ad]cHQ_h@V9`Gf=S^>QT10
+R2
+R3
+R4
+R5
+R6
+R17
+!i122 1
+l26
+L22 18
+VH<E1XHJa50dZ90GQVah9F2
+!s100 m8g^LTGXJV<EQWmh`LSb>3
+R10
+33
+R29
+!i10b 1
+R30
+R38
+R39
+!i113 1
+R15
+R16
+Edstage
+Z41 w1681989808
+R2
+R3
+R4
+R5
+R6
+!i122 8
+R0
+Z42 8C:/Users/elpri/Desktop/ArchProject/DStage.vhd
+Z43 FC:/Users/elpri/Desktop/ArchProject/DStage.vhd
+l0
+R9
+Vo>CaAPOR;aZ=m:kRb>n]@3
+!s100 :EZg_K7k;EX_Y=Xc5kkjR1
+R10
+33
+R11
+!i10b 1
+R12
+Z44 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/DStage.vhd|
+Z45 !s107 C:/Users/elpri/Desktop/ArchProject/DStage.vhd|
+!i113 1
+R15
+R16
+Astructure
+R25
+Z46 DEx4 work 7 regfile 0 22 dHczhHmh>YLUYA>`L7T9A3
+R33
+R2
+R3
+R4
+R5
+R6
+Z47 DEx4 work 6 dstage 0 22 o>CaAPOR;aZ=m:kRb>n]@3
+!i122 8
+l40
+L31 19
+Vi[Amz9Ck;KY=0U<oM9=1z2
+!s100 e;3`QeQ6Q<5AJBoTbD^E>0
+R10
+33
+R11
+!i10b 1
+R12
+R44
+R45
+!i113 1
+R15
+R16
+Eestage
+Z48 w1681999960
+R2
+R3
+R4
+R5
+R6
+!i122 9
+R0
+Z49 8C:/Users/elpri/Desktop/ArchProject/EStage.vhd
+Z50 FC:/Users/elpri/Desktop/ArchProject/EStage.vhd
+l0
+R9
+V]dgO<cX4bMdgh@oH<Q3CY2
+!s100 A:8WC]30;NM[X1F:g7B_R0
+R10
+33
+R11
+!i10b 1
+R12
+Z51 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/EStage.vhd|
+Z52 !s107 C:/Users/elpri/Desktop/ArchProject/EStage.vhd|
+!i113 1
+R15
+R16
+Astructure
+R18
+R19
+R33
+R2
+R3
+R4
+R5
+R6
+Z53 DEx4 work 6 estage 0 22 ]dgO<cX4bMdgh@oH<Q3CY2
+!i122 9
+l49
+L34 40
+V<XQi>R[kVg=OcL<JDZnBD2
+!s100 OfP2ekJOahj99g=Id5iPz3
+R10
+33
+R11
+!i10b 1
+R12
+R51
+R52
+!i113 1
+R15
+R16
+Efstage
+Z54 w1681986231
+R2
+R3
+R4
+R5
+R6
+!i122 7
+R0
+Z55 8C:/Users/elpri/Desktop/ArchProject/FStage.vhd
+Z56 FC:/Users/elpri/Desktop/ArchProject/FStage.vhd
+l0
+R9
+V]Q8Z8[QD?Mk]Z_`BZ07WM1
+!s100 >l30A1D?e5ZM]?7CV2[gE1
+R10
+33
+R11
+!i10b 1
+R12
+Z57 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/FStage.vhd|
+Z58 !s107 C:/Users/elpri/Desktop/ArchProject/FStage.vhd|
+!i113 1
+R15
+R16
+Astructure
+R18
+R46
+R34
+R2
+R3
+R4
+R5
+R6
+Z59 DEx4 work 6 fstage 0 22 ]Q8Z8[QD?Mk]Z_`BZ07WM1
+!i122 7
+l25
+L20 14
+V[C[Zl?jT;JSKGzo1B?[mN2
+!s100 F`cN`f17Tz>S;R<AAlCeM3
+R10
+33
+R11
+!i10b 1
+R12
+R57
+R58
+!i113 1
+R15
+R16
+Emstage
+Z60 w1681998936
+R2
+R3
+R4
+R5
+R6
+!i122 10
+R0
+Z61 8C:/Users/elpri/Desktop/ArchProject/MStage.vhd
+Z62 FC:/Users/elpri/Desktop/ArchProject/MStage.vhd
+l0
+R9
+V1Gk=567Dcc@b>Nk9>aRTK3
+!s100 h63P<C24495<7gdn6RF^L3
+R10
+33
+Z63 !s110 1682015753
+!i10b 1
+R12
+Z64 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/MStage.vhd|
+Z65 !s107 C:/Users/elpri/Desktop/ArchProject/MStage.vhd|
+!i113 1
+R15
+R16
+Astructure
+R46
+R18
+R33
+R2
+R3
+R4
+R5
+R6
+Z66 DEx4 work 6 mstage 0 22 1Gk=567Dcc@b>Nk9>aRTK3
+!i122 10
+l48
+L27 49
+V;95XVZ1z6`Ue2=bk74joP3
+!s100 j2h<fc?G8BAo9G9`BOL:K2
+R10
+33
+R63
+!i10b 1
+R12
+R64
+R65
+!i113 1
+R15
+R16
+Epipeline
+Z67 w1681997530
+R2
+R3
+R4
+R5
+R6
+!i122 12
+R0
+Z68 8C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd
+Z69 FC:/Users/elpri/Desktop/ArchProject/Pipeline.vhd
+l0
+R9
+Vb;mVHdzPXI[<l>@UahL]n1
+!s100 L]^CJ5:7@cHTGk4a[R@C?0
+R10
+33
+R63
+!i10b 1
+Z70 !s108 1682015753.000000
+Z71 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd|
+!s107 C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd|
+!i113 1
+R15
+R16
+Astructure
+Z72 DEx4 work 7 wbstage 0 22 1@WPX8dgR`c0FbYJP_oUD3
+R66
+R53
+R47
+R59
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 pipeline 0 22 b;mVHdzPXI[<l>@UahL]n1
+!i122 12
+l47
+L19 36
+VBDa_`_GK=IdM36h`K??FM3
+!s100 =FWNe[hJZi89W;F]4>IWO0
+R10
+33
+R63
+!i10b 1
+R70
+R71
+Z73 !s107 C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd|
+!i113 1
+R15
+R16
+Ercadder
+R35
+R2
+R3
+R4
+R5
+R6
+!i122 0
+R0
+Z74 8C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd
+Z75 FC:/Users/elpri/Desktop/ArchProject/RCAdder.vhd
+l0
+R9
+Vad]cHQ_h@V9`Gf=S^>QT10
+!s100 ?;YFP=mdSL1OeGdf]Zl?N1
+R10
+33
+R29
+!i10b 1
+R30
+Z76 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd|
+Z77 !s107 C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd|
+!i113 1
+R15
+R16
+Astructure
+DEx10 basiclogic 6 fadder 0 22 95?T6`585ANnFzC3<HKFi1
+R2
+R3
+R4
+R5
+R6
+R40
+!i122 0
+l23
+L21 9
+V@S7c02E;k4]KJhD=DoE7^3
+!s100 @idlC=m<7@5P7J@n>k7d_3
+R10
+33
+R29
+!i10b 1
+R30
+R76
+R77
+!i113 1
+R15
+R16
+Ereg
+Z78 w1680033192
+R2
+R3
+R4
+R5
+R6
+!i122 2
+R0
+Z79 8C:/Users/elpri/Desktop/ArchProject/Reg.vhd
+Z80 FC:/Users/elpri/Desktop/ArchProject/Reg.vhd
+l0
+R9
+VQEL0bM=g=ZH^dHGB;9b[V1
+!s100 `l9Kc9^37b4ag[60R`bL>0
+R10
+33
+R29
+!i10b 1
+R30
+Z81 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/Reg.vhd|
+Z82 !s107 C:/Users/elpri/Desktop/ArchProject/Reg.vhd|
+!i113 1
+R15
+R16
+Astructure_b
+DEx10 basiclogic 4 d_ff 0 22 gA=>RP2_T=ID:A>k5`;ao0
+R2
+R3
+R4
+R5
+R6
+R33
+!i122 2
+l33
+L32 6
+V9<U81]iz<HB[fKn;DEVGH1
+!s100 Xb8=b<fk^3oShnSP6VKUW2
+R10
+33
+R29
+!i10b 1
+R30
+R81
+R82
+!i113 1
+R15
+R16
+Astructure_a
+R2
+R3
+R4
+R5
+R6
+R33
+!i122 2
+l21
+L20 11
+V8`BZaG;hPNd[n8Xc]SffV0
+!s100 S3=@IFG1[E0oiOUU9i`ZZ0
+R10
+33
+R29
+!i10b 1
+R30
+R81
+R82
+!i113 1
+R15
+R16
+Eregfile
+Z83 w1682006895
+R2
+R3
+R4
+R5
+R6
+!i122 4
+R0
+Z84 8C:/Users/elpri/Desktop/ArchProject/RegFile.vhd
+Z85 FC:/Users/elpri/Desktop/ArchProject/RegFile.vhd
+l0
+R9
+VdHczhHmh>YLUYA>`L7T9A3
+!s100 Ff5ml[c5mj_`IIYd9e9Dn2
+R10
+33
+R29
+!i10b 1
+R30
+Z86 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/RegFile.vhd|
+Z87 !s107 C:/Users/elpri/Desktop/ArchProject/RegFile.vhd|
+!i113 1
+R15
+R16
+Astructure_c
+R33
+R18
+DEx10 basiclogic 7 encoder 0 22 ^0D5Z[z`Cgi39VUGaz:CL1
+DEx10 basiclogic 7 decoder 0 22 aDd3imP0ZRN;B^TDm44QX0
+R2
+R3
+R4
+R5
+R6
+R46
+!i122 4
+l129
+L119 29
+VKEz`]Rn11J?Ck7i<V>J9z1
+!s100 `a7RE>Q_No6<U=f9WH0P13
+R10
+33
+R11
+!i10b 1
+R30
+R86
+R87
+!i113 1
+R15
+R16
+Astructure_b
+R2
+R3
+R4
+R5
+R6
+R46
+!i122 4
+l77
+L66 52
+V`nicCJaO_ODMUODR7h^`l0
+!s100 m_@z70?]eQdmS]b^lcKBL1
+R10
+33
+R11
+!i10b 1
+R30
+R86
+R87
+!i113 1
+R15
+R16
+Astructure_a
+R2
+R3
+R4
+R5
+R6
+R46
+!i122 4
+l33
+L27 38
+V:CONZ`P:E>8f3RcW]geG;3
+!s100 <:A69RC[FIza@C2ICzXI92
+R10
+33
+R11
+!i10b 1
+R30
+R86
+R87
+!i113 1
+R15
+R16
+Ewbstage
+Z88 w1681996424
+R2
+R3
+R4
+R5
+R6
+!i122 11
+R0
+Z89 8C:/Users/elpri/Desktop/ArchProject/WBStage.vhd
+Z90 FC:/Users/elpri/Desktop/ArchProject/WBStage.vhd
+l0
+R9
+V1@WPX8dgR`c0FbYJP_oUD3
+!s100 adO[OCMAambiz0]=a2^B83
+R10
+33
+R63
+!i10b 1
+R70
+Z91 !s90 -reportprogress|300|-2008|-work|work|C:/Users/elpri/Desktop/ArchProject/WBStage.vhd|
+Z92 !s107 C:/Users/elpri/Desktop/ArchProject/WBStage.vhd|
+!i113 1
+R15
+R16
+Astructure
+R33
+R2
+R3
+R4
+R5
+R6
+R72
+!i122 11
+l26
+L24 9
+V1j=jIZIa=GZNnC]dUc=bg3
+!s100 `76HgbATRMa0cdMEX<>793
+R10
+33
+R63
+!i10b 1
+R70
+R91
+R92
+!i113 1
+R15
+R16

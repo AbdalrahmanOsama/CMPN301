@@ -1,0 +1,1247 @@
+# Reading pref.tcl
+# do Pipeline_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlib BASICLOGIC
+# ** Warning: (vlib-34) Library already exists at "BASICLOGIC".
+# vmap BASICLOGIC BASICLOGIC
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap BASICLOGIC BASICLOGIC 
+# Modifying modelsim.ini
+# vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/ArchProject/custom_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:49 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work BASICLOGIC C:/Users/elpri/Desktop/ArchProject/custom_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling package custom_types
+# End time: 20:35:49 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/ArchProject/Muxer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:50 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work BASICLOGIC C:/Users/elpri/Desktop/ArchProject/Muxer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity Muxer
+# -- Compiling architecture structure of Muxer
+# End time: 20:35:50 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/ArchProject/Demuxer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:50 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work BASICLOGIC C:/Users/elpri/Desktop/ArchProject/Demuxer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity Demuxer
+# -- Compiling architecture structure of Demuxer
+# End time: 20:35:50 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/ArchProject/Encoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:50 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work BASICLOGIC C:/Users/elpri/Desktop/ArchProject/Encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity Encoder
+# -- Compiling architecture structure of Encoder
+# End time: 20:35:50 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/ArchProject/Decoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:50 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work BASICLOGIC C:/Users/elpri/Desktop/ArchProject/Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity Decoder
+# -- Compiling architecture structure of Decoder
+# End time: 20:35:50 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/ArchProject/FAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:50 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work BASICLOGIC C:/Users/elpri/Desktop/ArchProject/FAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity FAdder
+# -- Compiling architecture structure of FAdder
+# End time: 20:35:50 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work BASICLOGIC {C:/Users/elpri/Desktop/ArchProject/D_FF.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:51 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work BASICLOGIC C:/Users/elpri/Desktop/ArchProject/D_FF.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity D_FF
+# -- Compiling architecture structure of D_FF
+# End time: 20:35:51 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:51 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/RCAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity RCAdder
+# -- Compiling architecture structure of RCAdder
+# -- Loading entity FAdder
+# End time: 20:35:51 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:51 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/CSAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity CSAdder
+# -- Compiling architecture structure of CSAdder
+# -- Loading entity RCAdder
+# -- Loading entity Muxer
+# End time: 20:35:51 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/Reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:51 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity Reg
+# -- Compiling architecture structure_a of Reg
+# -- Compiling architecture structure_b of Reg
+# -- Loading entity Reg
+# -- Loading entity D_FF
+# End time: 20:35:51 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/Counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:51 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/Counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity Counter
+# -- Compiling architecture structure of Counter
+# -- Loading entity CSAdder
+# -- Loading entity Muxer
+# -- Loading entity Reg
+# End time: 20:35:51 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/RegFile.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:51 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity RegFile
+# -- Compiling architecture structure_a of RegFile
+# -- Compiling architecture structure_b of RegFile
+# -- Loading entity RegFile
+# -- Compiling architecture structure_c of RegFile
+# -- Loading entity RegFile
+# -- Loading entity Decoder
+# -- Loading entity Encoder
+# -- Loading entity Muxer
+# -- Loading entity Reg
+# End time: 20:35:52 on Apr 20,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/ALU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:52 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity ALU
+# -- Compiling architecture structure of ALU
+# -- Loading entity Muxer
+# -- Loading entity CSAdder
+# End time: 20:35:52 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:52 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity ControlUnit
+# -- Compiling architecture structure of ControlUnit
+# End time: 20:35:52 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/FStage.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:52 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/FStage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity FStage
+# -- Compiling architecture structure of FStage
+# -- Loading entity Counter
+# ** Warning: C:/Users/elpri/Desktop/ArchProject/FStage.vhd(28): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# -- Loading entity RegFile
+# -- Loading entity Muxer
+# End time: 20:35:52 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/DStage.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:52 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/DStage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity DStage
+# -- Compiling architecture structure of DStage
+# -- Loading entity Reg
+# -- Loading entity RegFile
+# -- Loading entity ControlUnit
+# End time: 20:35:52 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/EStage.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:52 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/EStage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity EStage
+# -- Compiling architecture structure of EStage
+# -- Loading entity Reg
+# -- Loading entity ALU
+# -- Loading entity Muxer
+# End time: 20:35:52 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/MStage.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:52 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/MStage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity MStage
+# -- Compiling architecture structure of MStage
+# -- Loading entity Reg
+# -- Loading entity Muxer
+# -- Loading entity RegFile
+# End time: 20:35:53 on Apr 20,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/WBStage.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:53 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/WBStage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity WBStage
+# -- Compiling architecture structure of WBStage
+# -- Loading entity Reg
+# End time: 20:35:53 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:35:53 on Apr 20,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/elpri/Desktop/ArchProject/Pipeline.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package custom_types
+# -- Compiling entity Pipeline
+# -- Compiling architecture structure of Pipeline
+# -- Loading entity FStage
+# -- Loading entity DStage
+# -- Loading entity EStage
+# -- Loading entity MStage
+# -- Loading entity WBStage
+# End time: 20:35:53 on Apr 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do Testcase.do
+# vsim work.pipeline(structure) 
+# Start time: 20:36:01 on Apr 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading basiclogic.custom_types
+# Loading work.pipeline(structure)
+# Loading work.fstage(structure)
+# Loading work.counter(structure)
+# Loading work.csadder(structure)
+# Loading work.rcadder(structure)
+# Loading basiclogic.fadder(structure)
+# Loading basiclogic.muxer(structure)
+# Loading work.reg(structure_b)
+# Loading basiclogic.d_ff(structure)
+# Loading work.regfile(structure_a)
+# Loading work.dstage(structure)
+# Loading work.regfile(structure_c)
+# Loading basiclogic.decoder(structure)
+# Loading basiclogic.encoder(structure)
+# Loading work.controlunit(structure)
+# Loading work.estage(structure)
+# Loading work.alu(structure)
+# Loading work.mstage(structure)
+# Loading work.regfile(structure_b)
+# Loading work.wbstage(structure)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: elpri  Hostname: DESKTOP-B8V5E02  ProcessID: 21716
+#           Attempting to use alternate WLF file "./wlfttk8fsb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttk8fsb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Memory/Datamux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /pipeline/Memory/DataMemory/loop_out(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Memory/OutPortmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/Flagmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_c
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_f
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_cD
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_fD
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_cC
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_fC
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_cB
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_fB
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_cA
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_fA
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(2)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(2)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(1)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(1)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(0)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(0)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Execute/ALU/u_mux_op2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_out(1)/u_dout_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_out(0)/u_dout_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Decode/RegFile/loop_inx(0)/u_dec
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/mux_rst
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /pipeline/Fetch/InstCache/loop_out(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/PC/u_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(2)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(2)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(1)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(1)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(0)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(0)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Memory/OutPortmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Execute/ALU/u_mux_fA
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Execute/ALU/u_mux_cA
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline/Fetch/PC/u_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /pipeline/Execute/ALU/u_mux_fA
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(0)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(1)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(2)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(0)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(1)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(0)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /pipeline/Execute/ALU/u_Adder/loop_add(1)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 6  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(2)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 6  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(1)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 6  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(0)/other/u_cmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ps  Iteration: 2  Instance: /pipeline/Fetch/PC/u_Adder/loop_add(2)/other/u_smux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 850 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 1950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2350 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 2850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3350 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 3950 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 4650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5050 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5550 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 5750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6150 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6250 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_out(1)/u_dout_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6450 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_out(0)/u_dout_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6650 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6700 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_out(0)/u_dout_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6700 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_out(1)/u_dout_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_din_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(0)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(1)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(2)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(3)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(4)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(5)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(6)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: null detected, returning 0
+#    Time: 6750 ps  Iteration: 3  Instance: /pipeline/Decode/RegFile/loop_reg(7)/u_we_mux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6850 ps  Iteration: 2  Instance: /pipeline/Decode/RegFile/loop_inx(0)/u_dec
